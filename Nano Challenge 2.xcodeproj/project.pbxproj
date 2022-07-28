@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F5321272892C48400A67AA7 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5321262892C48400A67AA7 /* UIButton+Ext.swift */; };
+		5F5321292892D12A00A67AA7 /* GuidelinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5321282892D12A00A67AA7 /* GuidelinesTableViewCell.swift */; };
+		5F53212B2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212A2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift */; };
+		5F53213028930A2600A67AA7 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212C28930A2600A67AA7 /* Goal+CoreDataClass.swift */; };
+		5F53213128930A2600A67AA7 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212D28930A2600A67AA7 /* Goal+CoreDataProperties.swift */; };
+		5F53213228930A2600A67AA7 /* Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212E28930A2600A67AA7 /* Habit+CoreDataClass.swift */; };
+		5F53213328930A2600A67AA7 /* Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212F28930A2600A67AA7 /* Habit+CoreDataProperties.swift */; };
+		5F9DA5CA2893510700E0A100 /* GuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DA5C92893510700E0A100 /* GuidelinesViewController.swift */; };
+		5F9DA5CC2893511600E0A100 /* GuidelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DA5CB2893511600E0A100 /* GuidelinesView.swift */; };
+		5FA6536E288E8A340022ACA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6536D288E8A340022ACA2 /* AppDelegate.swift */; };
+		5FA65370288E8A340022ACA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6536F288E8A340022ACA2 /* SceneDelegate.swift */; };
+		5FA65372288E8A340022ACA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA65371288E8A340022ACA2 /* ViewController.swift */; };
+		5FA65378288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FA65376288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodeld */; };
+		5FA6537A288E8A360022ACA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA65379288E8A360022ACA2 /* Assets.xcassets */; };
+		5FA6537D288E8A360022ACA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6537B288E8A360022ACA2 /* LaunchScreen.storyboard */; };
+		5FA65389288E8BBB0022ACA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA65388288E8BBB0022ACA2 /* HomeView.swift */; };
+		5FA6538F288E95700022ACA2 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6538E288E95700022ACA2 /* Labels.swift */; };
+		5FA65391288EA42E0022ACA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA65390288EA42E0022ACA2 /* HomeViewController.swift */; };
+		5FA65396288EA7560022ACA2 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA65395288EA7560022ACA2 /* GoalsViewController.swift */; };
+		5FA65398288EDA140022ACA2 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA65397288EDA140022ACA2 /* GoalsView.swift */; };
+		5FA6539A288F7BB30022ACA2 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA65399288F7BB30022ACA2 /* TableView.swift */; };
+		5FA6539C288F7EC80022ACA2 /* HomeViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6539B288F7EC80022ACA2 /* HomeViewController+Delegate.swift */; };
+		5FA6539E288F7EF80022ACA2 /* HomeViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6539D288F7EF80022ACA2 /* HomeViewController+DataSource.swift */; };
+		5FA653A4288FA5DD0022ACA2 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A3288FA5DD0022ACA2 /* ToDoTableViewCell.swift */; };
+		5FA653A6288FA85A0022ACA2 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A5288FA85A0022ACA2 /* Buttons.swift */; };
+		5FA653A8288FAFF00022ACA2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A7288FAFF00022ACA2 /* Card.swift */; };
+		5FA653AA288FE5C40022ACA2 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A9288FE5C40022ACA2 /* GoalTableViewCell.swift */; };
+		5FA653AC288FEB0A0022ACA2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653AB288FEB0A0022ACA2 /* Images.swift */; };
+		5FA653AE288FED300022ACA2 /* GoalsViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653AD288FED300022ACA2 /* GoalsViewController+Delegate.swift */; };
+		5FA653B0288FED3F0022ACA2 /* GoalsViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653AF288FED3F0022ACA2 /* GoalsViewController+DataSource.swift */; };
+		5FA653B528901A2C0022ACA2 /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653B428901A2C0022ACA2 /* GoalDetailViewController.swift */; };
+		5FA653C228901BF20022ACA2 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C128901BF20022ACA2 /* AddGoalViewController.swift */; };
+		5FA653C42890203A0022ACA2 /* GoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C32890203A0022ACA2 /* GoalDetailView.swift */; };
+		5FA653C6289091790022ACA2 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C5289091790022ACA2 /* ProgressView.swift */; };
+		5FA653C8289095290022ACA2 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C7289095290022ACA2 /* HabitTableViewCell.swift */; };
+		5FA653CA289096590022ACA2 /* GoalDetailViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C9289096590022ACA2 /* GoalDetailViewController+Delegate.swift */; };
+		5FA653CC289096660022ACA2 /* GoalDetailViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653CB289096660022ACA2 /* GoalDetailViewController+DataSource.swift */; };
+		5FA653CE289099480022ACA2 /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653CD289099480022ACA2 /* HabitDetailViewController.swift */; };
+		5FA653D02890995E0022ACA2 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653CF2890995E0022ACA2 /* HabitDetailView.swift */; };
+		5FA653D228909B640022ACA2 /* HabitDetailViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D128909B640022ACA2 /* HabitDetailViewController+Delegate.swift */; };
+		5FA653D428909B780022ACA2 /* HabitDetailViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D328909B780022ACA2 /* HabitDetailViewController+DataSource.swift */; };
+		5FA653D62890BC030022ACA2 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D52890BC030022ACA2 /* ScheduleTableViewCell.swift */; };
+		5FA653D92890C99E0022ACA2 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D82890C99E0022ACA2 /* StackView.swift */; };
+		5FA653DB2890D43D0022ACA2 /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */; };
+		5FA653DF2890E3AE0022ACA2 /* CalendarTableViewCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653DE2890E3AD0022ACA2 /* CalendarTableViewCellOne.swift */; };
+		5FA653E12890EA270022ACA2 /* CalendarTableViewCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E02890EA270022ACA2 /* CalendarTableViewCellTwo.swift */; };
+		5FA653E32890ED190022ACA2 /* CalendarTableViewCellFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E22890ED190022ACA2 /* CalendarTableViewCellFour.swift */; };
+		5FA653E62890EDF20022ACA2 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */; };
+		5FA653E82890EF450022ACA2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E72890EF450022ACA2 /* UIView+Ext.swift */; };
+		5FA653EA2890F1520022ACA2 /* CalendarTableViewCellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E92890F1520022ACA2 /* CalendarTableViewCellThree.swift */; };
+		5FA653ED2890F5590022ACA2 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653EC2890F5590022ACA2 /* CollectionView.swift */; };
+		5FA653EF2890F9AF0022ACA2 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */; };
+		5FAC9BED28920968007CEBD0 /* AddGoalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */; };
+		5FAC9BEF28922964007CEBD0 /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC9BEE28922964007CEBD0 /* Convert.swift */; };
+		5FE377492891273700E44C6D /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377482891273700E44C6D /* UIColor+Ext.swift */; };
+		5FE3774B2891306400E44C6D /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3774A2891306300E44C6D /* AddGoalView.swift */; };
+		5FE3774D2891424600E44C6D /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3774C2891424600E44C6D /* TextFieldTableViewCell.swift */; };
+		5FE3774F2891427200E44C6D /* Inputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3774E2891427200E44C6D /* Inputs.swift */; };
+		5FE377512891439F00E44C6D /* AddGoalViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377502891439F00E44C6D /* AddGoalViewController+Delegate.swift */; };
+		5FE37753289143AA00E44C6D /* AddGoalViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE37752289143AA00E44C6D /* AddGoalViewController+DataSource.swift */; };
+		5FE37757289144CB00E44C6D /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE37756289144CB00E44C6D /* TextViewTableViewCell.swift */; };
+		5FE377592891475200E44C6D /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377582891475200E44C6D /* AddHabitViewController.swift */; };
+		5FE3775B2891476300E44C6D /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3775A2891476300E44C6D /* AddHabitView.swift */; };
+		5FE3775D2891479800E44C6D /* AddHabitViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3775C2891479800E44C6D /* AddHabitViewController+Delegate.swift */; };
+		5FE3775F289147A300E44C6D /* AddHabitViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3775E289147A300E44C6D /* AddHabitViewController+DataSource.swift */; };
+		5FE3776328914A3900E44C6D /* ToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776228914A3900E44C6D /* ToggleTableViewCell.swift */; };
+		5FE3776528914CC800E44C6D /* PickScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */; };
+		5FE3776A28914EBF00E44C6D /* PickScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776928914EBF00E44C6D /* PickScheduleViewController.swift */; };
+		5FE3776C28914ECD00E44C6D /* PickScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776B28914ECD00E44C6D /* PickScheduleView.swift */; };
+		5FE3776E28915C0500E44C6D /* PickScheduleViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776D28915C0500E44C6D /* PickScheduleViewController+Delegate.swift */; };
+		5FE3777028915C1400E44C6D /* PickScheduleViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776F28915C1400E44C6D /* PickScheduleViewController+DataSource.swift */; };
+		5FE3777228916C4C00E44C6D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3777128916C4C00E44C6D /* Constants.swift */; };
+		5FE377872891B5DB00E44C6D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377862891B5DB00E44C6D /* CoreDataManager.swift */; };
+		5FE377952891B8EC00E44C6D /* GoalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377942891B8EC00E44C6D /* GoalRepository.swift */; };
+		5FE377972891B94000E44C6D /* GoalCoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377962891B93F00E44C6D /* GoalCoreDataSource.swift */; };
+		5FE377992891BD4F00E44C6D /* HabitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377982891BD4F00E44C6D /* HabitRepository.swift */; };
+		5FE3779B2891BD5900E44C6D /* HabitCoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3779A2891BD5900E44C6D /* HabitCoreDataSource.swift */; };
+		5FE3779D2891C54200E44C6D /* Alert+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3779C2891C54200E44C6D /* Alert+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F5321262892C48400A67AA7 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		5F5321282892D12A00A67AA7 /* GuidelinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesTableViewCell.swift; sourceTree = "<group>"; };
+		5F53212A2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGuidelinesTableViewCell.swift; sourceTree = "<group>"; };
+		5F53212C28930A2600A67AA7 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5F53212D28930A2600A67AA7 /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5F53212E28930A2600A67AA7 /* Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5F53212F28930A2600A67AA7 /* Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5F9DA5C92893510700E0A100 /* GuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesViewController.swift; sourceTree = "<group>"; };
+		5F9DA5CB2893511600E0A100 /* GuidelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesView.swift; sourceTree = "<group>"; };
+		5FA6536A288E8A340022ACA2 /* Nano Challenge 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA6536D288E8A340022ACA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FA6536F288E8A340022ACA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5FA65371288E8A340022ACA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FA65377288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nano_Challenge_2.xcdatamodel; sourceTree = "<group>"; };
+		5FA65379288E8A360022ACA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FA6537C288E8A360022ACA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FA6537E288E8A360022ACA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA65388288E8BBB0022ACA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5FA6538E288E95700022ACA2 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		5FA65390288EA42E0022ACA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5FA65395288EA7560022ACA2 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		5FA65397288EDA140022ACA2 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
+		5FA65399288F7BB30022ACA2 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		5FA6539B288F7EC80022ACA2 /* HomeViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegate.swift"; sourceTree = "<group>"; };
+		5FA6539D288F7EF80022ACA2 /* HomeViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5FA653A3288FA5DD0022ACA2 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		5FA653A5288FA85A0022ACA2 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		5FA653A7288FAFF00022ACA2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5FA653A9288FE5C40022ACA2 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		5FA653AB288FEB0A0022ACA2 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		5FA653AD288FED300022ACA2 /* GoalsViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalsViewController+Delegate.swift"; sourceTree = "<group>"; };
+		5FA653AF288FED3F0022ACA2 /* GoalsViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalsViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5FA653B428901A2C0022ACA2 /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
+		5FA653C128901BF20022ACA2 /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		5FA653C32890203A0022ACA2 /* GoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailView.swift; sourceTree = "<group>"; };
+		5FA653C5289091790022ACA2 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		5FA653C7289095290022ACA2 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
+		5FA653C9289096590022ACA2 /* GoalDetailViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalDetailViewController+Delegate.swift"; sourceTree = "<group>"; };
+		5FA653CB289096660022ACA2 /* GoalDetailViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalDetailViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5FA653CD289099480022ACA2 /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
+		5FA653CF2890995E0022ACA2 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		5FA653D128909B640022ACA2 /* HabitDetailViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitDetailViewController+Delegate.swift"; sourceTree = "<group>"; };
+		5FA653D328909B780022ACA2 /* HabitDetailViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitDetailViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5FA653D52890BC030022ACA2 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		5FA653D82890C99E0022ACA2 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
+		5FA653DE2890E3AD0022ACA2 /* CalendarTableViewCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCellOne.swift; sourceTree = "<group>"; };
+		5FA653E02890EA270022ACA2 /* CalendarTableViewCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCellTwo.swift; sourceTree = "<group>"; };
+		5FA653E22890ED190022ACA2 /* CalendarTableViewCellFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCellFour.swift; sourceTree = "<group>"; };
+		5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		5FA653E72890EF450022ACA2 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		5FA653E92890F1520022ACA2 /* CalendarTableViewCellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCellThree.swift; sourceTree = "<group>"; };
+		5FA653EC2890F5590022ACA2 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalDelegate.swift; sourceTree = "<group>"; };
+		5FAC9BEE28922964007CEBD0 /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		5FE377482891273700E44C6D /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		5FE3774A2891306300E44C6D /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
+		5FE3774C2891424600E44C6D /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		5FE3774E2891427200E44C6D /* Inputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inputs.swift; sourceTree = "<group>"; };
+		5FE377502891439F00E44C6D /* AddGoalViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddGoalViewController+Delegate.swift"; sourceTree = "<group>"; };
+		5FE37752289143AA00E44C6D /* AddGoalViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddGoalViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5FE37756289144CB00E44C6D /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		5FE377582891475200E44C6D /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
+		5FE3775A2891476300E44C6D /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		5FE3775C2891479800E44C6D /* AddHabitViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddHabitViewController+Delegate.swift"; sourceTree = "<group>"; };
+		5FE3775E289147A300E44C6D /* AddHabitViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddHabitViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5FE3776228914A3900E44C6D /* ToggleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTableViewCell.swift; sourceTree = "<group>"; };
+		5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		5FE3776928914EBF00E44C6D /* PickScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleViewController.swift; sourceTree = "<group>"; };
+		5FE3776B28914ECD00E44C6D /* PickScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleView.swift; sourceTree = "<group>"; };
+		5FE3776D28915C0500E44C6D /* PickScheduleViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickScheduleViewController+Delegate.swift"; sourceTree = "<group>"; };
+		5FE3776F28915C1400E44C6D /* PickScheduleViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickScheduleViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5FE3777128916C4C00E44C6D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5FE377862891B5DB00E44C6D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5FE377942891B8EC00E44C6D /* GoalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRepository.swift; sourceTree = "<group>"; };
+		5FE377962891B93F00E44C6D /* GoalCoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCoreDataSource.swift; sourceTree = "<group>"; };
+		5FE377982891BD4F00E44C6D /* HabitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRepository.swift; sourceTree = "<group>"; };
+		5FE3779A2891BD5900E44C6D /* HabitCoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCoreDataSource.swift; sourceTree = "<group>"; };
+		5FE3779C2891C54200E44C6D /* Alert+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FA65367288E8A340022ACA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F9DA5C3289350C500E0A100 /* Gamification Guidelines */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DA5C6289350DB00E0A100 /* Controller */,
+				5F9DA5C4289350D000E0A100 /* View */,
+			);
+			path = "Gamification Guidelines";
+			sourceTree = "<group>";
+		};
+		5F9DA5C4289350D000E0A100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DA5CB2893511600E0A100 /* GuidelinesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F9DA5C6289350DB00E0A100 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DA5C92893510700E0A100 /* GuidelinesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FA65361288E8A340022ACA2 = {
+			isa = PBXGroup;
+			children = (
+				5FA6536C288E8A340022ACA2 /* Nano Challenge 2 */,
+				5FA6536B288E8A340022ACA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FA6536B288E8A340022ACA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6536A288E8A340022ACA2 /* Nano Challenge 2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FA6536C288E8A340022ACA2 /* Nano Challenge 2 */ = {
+			isa = PBXGroup;
+			children = (
+				5FAC9BF028925488007CEBD0 /* Helper */,
+				5FE377912891B88F00E44C6D /* Data */,
+				5FA653E42890EDDA0022ACA2 /* Extensions */,
+				5FA6538C288E91B00022ACA2 /* Themes */,
+				5FA65384288E8B650022ACA2 /* Feature */,
+				5FA6536D288E8A340022ACA2 /* AppDelegate.swift */,
+				5FA6536F288E8A340022ACA2 /* SceneDelegate.swift */,
+				5FA65379288E8A360022ACA2 /* Assets.xcassets */,
+				5FA6537B288E8A360022ACA2 /* LaunchScreen.storyboard */,
+				5FA6537E288E8A360022ACA2 /* Info.plist */,
+			);
+			path = "Nano Challenge 2";
+			sourceTree = "<group>";
+		};
+		5FA65384288E8B650022ACA2 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5F9DA5C3289350C500E0A100 /* Gamification Guidelines */,
+				5FE3776628914E9D00E44C6D /* Pick Schedule */,
+				5FA65371288E8A340022ACA2 /* ViewController.swift */,
+				5FA653BD28901BCF0022ACA2 /* Add Habit */,
+				5FA653BA28901BBC0022ACA2 /* Add Goal */,
+				5FA653B628901BA10022ACA2 /* Habit Detail */,
+				5FA653B128901A070022ACA2 /* Goal Detail */,
+				5FA65392288EA7290022ACA2 /* Goals */,
+				5FA65385288E8B6B0022ACA2 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5FA65385288E8B6B0022ACA2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5FA65386288E8B7E0022ACA2 /* View */,
+				5FA65387288E8B820022ACA2 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5FA65386288E8B7E0022ACA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FA65388288E8BBB0022ACA2 /* HomeView.swift */,
+				5FA653A3288FA5DD0022ACA2 /* ToDoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FA65387288E8B820022ACA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FA65390288EA42E0022ACA2 /* HomeViewController.swift */,
+				5FA6539B288F7EC80022ACA2 /* HomeViewController+Delegate.swift */,
+				5FA6539D288F7EF80022ACA2 /* HomeViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FA6538C288E91B00022ACA2 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653D72890C9870022ACA2 /* UI Component */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		5FA65392288EA7290022ACA2 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				5FA65393288EA7310022ACA2 /* View */,
+				5FA65394288EA7340022ACA2 /* Controller */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		5FA65393288EA7310022ACA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FA65397288EDA140022ACA2 /* GoalsView.swift */,
+				5FA653A9288FE5C40022ACA2 /* GoalTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FA65394288EA7340022ACA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FA65395288EA7560022ACA2 /* GoalsViewController.swift */,
+				5FA653AD288FED300022ACA2 /* GoalsViewController+Delegate.swift */,
+				5FA653AF288FED3F0022ACA2 /* GoalsViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FA653B128901A070022ACA2 /* Goal Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653B328901A100022ACA2 /* Controller */,
+				5FA653B228901A0D0022ACA2 /* View */,
+			);
+			path = "Goal Detail";
+			sourceTree = "<group>";
+		};
+		5FA653B228901A0D0022ACA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653C32890203A0022ACA2 /* GoalDetailView.swift */,
+				5FA653C7289095290022ACA2 /* HabitTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FA653B328901A100022ACA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653B428901A2C0022ACA2 /* GoalDetailViewController.swift */,
+				5FA653C9289096590022ACA2 /* GoalDetailViewController+Delegate.swift */,
+				5FA653CB289096660022ACA2 /* GoalDetailViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FA653B628901BA10022ACA2 /* Habit Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653B928901BB50022ACA2 /* Controller */,
+				5FA653B728901BA80022ACA2 /* View */,
+			);
+			path = "Habit Detail";
+			sourceTree = "<group>";
+		};
+		5FA653B728901BA80022ACA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653CF2890995E0022ACA2 /* HabitDetailView.swift */,
+				5FA653EB2890F1580022ACA2 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FA653B928901BB50022ACA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653CD289099480022ACA2 /* HabitDetailViewController.swift */,
+				5FA653D128909B640022ACA2 /* HabitDetailViewController+Delegate.swift */,
+				5FA653D328909B780022ACA2 /* HabitDetailViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FA653BA28901BBC0022ACA2 /* Add Goal */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653BC28901BCA0022ACA2 /* Controller */,
+				5FA653BB28901BC60022ACA2 /* View */,
+			);
+			path = "Add Goal";
+			sourceTree = "<group>";
+		};
+		5FA653BB28901BC60022ACA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3774A2891306300E44C6D /* AddGoalView.swift */,
+				5FE37756289144CB00E44C6D /* TextViewTableViewCell.swift */,
+				5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FA653BC28901BCA0022ACA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653C128901BF20022ACA2 /* AddGoalViewController.swift */,
+				5FE377502891439F00E44C6D /* AddGoalViewController+Delegate.swift */,
+				5FE37752289143AA00E44C6D /* AddGoalViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FA653BD28901BCF0022ACA2 /* Add Habit */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653C028901BE00022ACA2 /* Controller */,
+				5FA653BF28901BDB0022ACA2 /* View */,
+			);
+			path = "Add Habit";
+			sourceTree = "<group>";
+		};
+		5FA653BF28901BDB0022ACA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3775A2891476300E44C6D /* AddHabitView.swift */,
+				5FE3776228914A3900E44C6D /* ToggleTableViewCell.swift */,
+				5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FA653C028901BE00022ACA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FE377582891475200E44C6D /* AddHabitViewController.swift */,
+				5FE3775C2891479800E44C6D /* AddHabitViewController+Delegate.swift */,
+				5FE3775E289147A300E44C6D /* AddHabitViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FA653D72890C9870022ACA2 /* UI Component */ = {
+			isa = PBXGroup;
+			children = (
+				5FE37761289149D300E44C6D /* Cell */,
+				5FA6538E288E95700022ACA2 /* Labels.swift */,
+				5FA65399288F7BB30022ACA2 /* TableView.swift */,
+				5FA653A5288FA85A0022ACA2 /* Buttons.swift */,
+				5FA653A7288FAFF00022ACA2 /* Card.swift */,
+				5FA653AB288FEB0A0022ACA2 /* Images.swift */,
+				5FA653C5289091790022ACA2 /* ProgressView.swift */,
+				5FA653D82890C99E0022ACA2 /* StackView.swift */,
+				5FA653EC2890F5590022ACA2 /* CollectionView.swift */,
+				5FE3774E2891427200E44C6D /* Inputs.swift */,
+			);
+			path = "UI Component";
+			sourceTree = "<group>";
+		};
+		5FA653E42890EDDA0022ACA2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */,
+				5FA653E72890EF450022ACA2 /* UIView+Ext.swift */,
+				5FE377482891273700E44C6D /* UIColor+Ext.swift */,
+				5FE3779C2891C54200E44C6D /* Alert+Ext.swift */,
+				5F5321262892C48400A67AA7 /* UIButton+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5FA653EB2890F1580022ACA2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5FA653D52890BC030022ACA2 /* ScheduleTableViewCell.swift */,
+				5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */,
+				5FA653DE2890E3AD0022ACA2 /* CalendarTableViewCellOne.swift */,
+				5FA653E02890EA270022ACA2 /* CalendarTableViewCellTwo.swift */,
+				5FA653E22890ED190022ACA2 /* CalendarTableViewCellFour.swift */,
+				5FA653E92890F1520022ACA2 /* CalendarTableViewCellThree.swift */,
+				5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5FAC9BF028925488007CEBD0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3777128916C4C00E44C6D /* Constants.swift */,
+				5FAC9BEE28922964007CEBD0 /* Convert.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5FE37761289149D300E44C6D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3774C2891424600E44C6D /* TextFieldTableViewCell.swift */,
+				5F5321282892D12A00A67AA7 /* GuidelinesTableViewCell.swift */,
+				5F53212A2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5FE3776628914E9D00E44C6D /* Pick Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3776828914EA900E44C6D /* Controller */,
+				5FE3776728914EA400E44C6D /* View */,
+			);
+			path = "Pick Schedule";
+			sourceTree = "<group>";
+		};
+		5FE3776728914EA400E44C6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3776B28914ECD00E44C6D /* PickScheduleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FE3776828914EA900E44C6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3776928914EBF00E44C6D /* PickScheduleViewController.swift */,
+				5FE3776D28915C0500E44C6D /* PickScheduleViewController+Delegate.swift */,
+				5FE3776F28915C1400E44C6D /* PickScheduleViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FE377882891B7BF00E44C6D /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F53212C28930A2600A67AA7 /* Goal+CoreDataClass.swift */,
+				5F53212D28930A2600A67AA7 /* Goal+CoreDataProperties.swift */,
+				5F53212E28930A2600A67AA7 /* Habit+CoreDataClass.swift */,
+				5F53212F28930A2600A67AA7 /* Habit+CoreDataProperties.swift */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		5FE377912891B88F00E44C6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5FA65376288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodeld */,
+				5FE377862891B5DB00E44C6D /* CoreDataManager.swift */,
+				5FE377882891B7BF00E44C6D /* Core Data Model */,
+				5FE377932891B8A600E44C6D /* Data Source */,
+				5FE377922891B89600E44C6D /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5FE377922891B89600E44C6D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5FE377942891B8EC00E44C6D /* GoalRepository.swift */,
+				5FE377982891BD4F00E44C6D /* HabitRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5FE377932891B8A600E44C6D /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				5FE377962891B93F00E44C6D /* GoalCoreDataSource.swift */,
+				5FE3779A2891BD5900E44C6D /* HabitCoreDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FA65369288E8A340022ACA2 /* Nano Challenge 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA65381288E8A360022ACA2 /* Build configuration list for PBXNativeTarget "Nano Challenge 2" */;
+			buildPhases = (
+				5FA65366288E8A340022ACA2 /* Sources */,
+				5FA65367288E8A340022ACA2 /* Frameworks */,
+				5FA65368288E8A340022ACA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nano Challenge 2";
+			productName = "Nano Challenge 2";
+			productReference = 5FA6536A288E8A340022ACA2 /* Nano Challenge 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FA65362288E8A340022ACA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5FA65369288E8A340022ACA2 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5FA65365288E8A340022ACA2 /* Build configuration list for PBXProject "Nano Challenge 2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FA65361288E8A340022ACA2;
+			productRefGroup = 5FA6536B288E8A340022ACA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FA65369288E8A340022ACA2 /* Nano Challenge 2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FA65368288E8A340022ACA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6537D288E8A360022ACA2 /* LaunchScreen.storyboard in Resources */,
+				5FA6537A288E8A360022ACA2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FA65366288E8A340022ACA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE3779B2891BD5900E44C6D /* HabitCoreDataSource.swift in Sources */,
+				5FE3774B2891306400E44C6D /* AddGoalView.swift in Sources */,
+				5FA653D02890995E0022ACA2 /* HabitDetailView.swift in Sources */,
+				5FA653A6288FA85A0022ACA2 /* Buttons.swift in Sources */,
+				5FAC9BEF28922964007CEBD0 /* Convert.swift in Sources */,
+				5FA653B528901A2C0022ACA2 /* GoalDetailViewController.swift in Sources */,
+				5FE377972891B94000E44C6D /* GoalCoreDataSource.swift in Sources */,
+				5FE3779D2891C54200E44C6D /* Alert+Ext.swift in Sources */,
+				5FA65378288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodeld in Sources */,
+				5FA65398288EDA140022ACA2 /* GoalsView.swift in Sources */,
+				5FA65372288E8A340022ACA2 /* ViewController.swift in Sources */,
+				5F5321272892C48400A67AA7 /* UIButton+Ext.swift in Sources */,
+				5F9DA5CA2893510700E0A100 /* GuidelinesViewController.swift in Sources */,
+				5FA653EF2890F9AF0022ACA2 /* DateCollectionViewCell.swift in Sources */,
+				5FE3775D2891479800E44C6D /* AddHabitViewController+Delegate.swift in Sources */,
+				5F53213128930A2600A67AA7 /* Goal+CoreDataProperties.swift in Sources */,
+				5FA653ED2890F5590022ACA2 /* CollectionView.swift in Sources */,
+				5FA653D62890BC030022ACA2 /* ScheduleTableViewCell.swift in Sources */,
+				5FA653C6289091790022ACA2 /* ProgressView.swift in Sources */,
+				5F9DA5CC2893511600E0A100 /* GuidelinesView.swift in Sources */,
+				5FA65391288EA42E0022ACA2 /* HomeViewController.swift in Sources */,
+				5FE377512891439F00E44C6D /* AddGoalViewController+Delegate.swift in Sources */,
+				5FA653B0288FED3F0022ACA2 /* GoalsViewController+DataSource.swift in Sources */,
+				5FA653CA289096590022ACA2 /* GoalDetailViewController+Delegate.swift in Sources */,
+				5FE3774F2891427200E44C6D /* Inputs.swift in Sources */,
+				5FA6538F288E95700022ACA2 /* Labels.swift in Sources */,
+				5FE3777228916C4C00E44C6D /* Constants.swift in Sources */,
+				5FA653C42890203A0022ACA2 /* GoalDetailView.swift in Sources */,
+				5FA653DB2890D43D0022ACA2 /* ProgressTableViewCell.swift in Sources */,
+				5F53213228930A2600A67AA7 /* Habit+CoreDataClass.swift in Sources */,
+				5FE3775B2891476300E44C6D /* AddHabitView.swift in Sources */,
+				5FAC9BED28920968007CEBD0 /* AddGoalDelegate.swift in Sources */,
+				5FA653E32890ED190022ACA2 /* CalendarTableViewCellFour.swift in Sources */,
+				5FA653CE289099480022ACA2 /* HabitDetailViewController.swift in Sources */,
+				5FE3776528914CC800E44C6D /* PickScheduleTableViewCell.swift in Sources */,
+				5FA6539E288F7EF80022ACA2 /* HomeViewController+DataSource.swift in Sources */,
+				5FA653A4288FA5DD0022ACA2 /* ToDoTableViewCell.swift in Sources */,
+				5FA653CC289096660022ACA2 /* GoalDetailViewController+DataSource.swift in Sources */,
+				5FE377492891273700E44C6D /* UIColor+Ext.swift in Sources */,
+				5FA653C228901BF20022ACA2 /* AddGoalViewController.swift in Sources */,
+				5F53213028930A2600A67AA7 /* Goal+CoreDataClass.swift in Sources */,
+				5FA6539C288F7EC80022ACA2 /* HomeViewController+Delegate.swift in Sources */,
+				5FA653E62890EDF20022ACA2 /* UILabel+Ext.swift in Sources */,
+				5FE377992891BD4F00E44C6D /* HabitRepository.swift in Sources */,
+				5FA653DF2890E3AE0022ACA2 /* CalendarTableViewCellOne.swift in Sources */,
+				5F5321292892D12A00A67AA7 /* GuidelinesTableViewCell.swift in Sources */,
+				5FE3774D2891424600E44C6D /* TextFieldTableViewCell.swift in Sources */,
+				5FE3776E28915C0500E44C6D /* PickScheduleViewController+Delegate.swift in Sources */,
+				5FA6536E288E8A340022ACA2 /* AppDelegate.swift in Sources */,
+				5FA653AA288FE5C40022ACA2 /* GoalTableViewCell.swift in Sources */,
+				5FE3776328914A3900E44C6D /* ToggleTableViewCell.swift in Sources */,
+				5FE377952891B8EC00E44C6D /* GoalRepository.swift in Sources */,
+				5FE3777028915C1400E44C6D /* PickScheduleViewController+DataSource.swift in Sources */,
+				5FE37753289143AA00E44C6D /* AddGoalViewController+DataSource.swift in Sources */,
+				5FA653EA2890F1520022ACA2 /* CalendarTableViewCellThree.swift in Sources */,
+				5FA65389288E8BBB0022ACA2 /* HomeView.swift in Sources */,
+				5FA653D92890C99E0022ACA2 /* StackView.swift in Sources */,
+				5FE3776C28914ECD00E44C6D /* PickScheduleView.swift in Sources */,
+				5FE377872891B5DB00E44C6D /* CoreDataManager.swift in Sources */,
+				5FE3776A28914EBF00E44C6D /* PickScheduleViewController.swift in Sources */,
+				5FA653AE288FED300022ACA2 /* GoalsViewController+Delegate.swift in Sources */,
+				5FA653AC288FEB0A0022ACA2 /* Images.swift in Sources */,
+				5FA65370288E8A340022ACA2 /* SceneDelegate.swift in Sources */,
+				5FA653D428909B780022ACA2 /* HabitDetailViewController+DataSource.swift in Sources */,
+				5FA653D228909B640022ACA2 /* HabitDetailViewController+Delegate.swift in Sources */,
+				5FE37757289144CB00E44C6D /* TextViewTableViewCell.swift in Sources */,
+				5FE3775F289147A300E44C6D /* AddHabitViewController+DataSource.swift in Sources */,
+				5FA6539A288F7BB30022ACA2 /* TableView.swift in Sources */,
+				5F53213328930A2600A67AA7 /* Habit+CoreDataProperties.swift in Sources */,
+				5FA653E12890EA270022ACA2 /* CalendarTableViewCellTwo.swift in Sources */,
+				5FA653E82890EF450022ACA2 /* UIView+Ext.swift in Sources */,
+				5FA653C8289095290022ACA2 /* HabitTableViewCell.swift in Sources */,
+				5F53212B2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift in Sources */,
+				5FA65396288EA7560022ACA2 /* GoalsViewController.swift in Sources */,
+				5FA653A8288FAFF00022ACA2 /* Card.swift in Sources */,
+				5FE377592891475200E44C6D /* AddHabitViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5FA6537B288E8A360022ACA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA6537C288E8A360022ACA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FA6537F288E8A360022ACA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FA65380288E8A360022ACA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FA65382288E8A360022ACA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5658ASKD6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nano Challenge 2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Gobit;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Nano-Challenge-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FA65383288E8A360022ACA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5658ASKD6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nano Challenge 2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Gobit;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Nano-Challenge-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FA65365288E8A340022ACA2 /* Build configuration list for PBXProject "Nano Challenge 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA6537F288E8A360022ACA2 /* Debug */,
+				5FA65380288E8A360022ACA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA65381288E8A360022ACA2 /* Build configuration list for PBXNativeTarget "Nano Challenge 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA65382288E8A360022ACA2 /* Debug */,
+				5FA65383288E8A360022ACA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5FA65376288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5FA65377288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodel */,
+			);
+			currentVersion = 5FA65377288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodel */;
+			path = Nano_Challenge_2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5FA65362288E8A340022ACA2 /* Project object */;
+}
