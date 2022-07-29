@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.delegate = self
+        tabBarController?.tabBar.backgroundColor = .white
     }
     
     override func loadView() {

@@ -39,7 +39,7 @@ class AddGoalView: UIView {
         navBar.leftButton?.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         navBar.rightButton?.addTarget(self, action: #selector(doneAction), for: .touchUpInside)
         
-        tableViewForm.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+//        tableViewForm.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -84,7 +84,7 @@ class AddGoalView: UIView {
         goalAddedDelegate?.reloadGoals()
     }
     
-    @objc func hideKeyboard() {
-        self.endEditing(true)
-    }
+//    @objc func hideKeyboard() {
+//        self.endEditing(true)
+//    }
 }
