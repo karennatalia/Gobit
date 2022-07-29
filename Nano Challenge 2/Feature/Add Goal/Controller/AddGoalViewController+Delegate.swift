@@ -65,3 +65,19 @@ extension AddGoalViewController: AddGoalDelegate {
         }
     }
 }
+
+extension AddGoalViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.systemGray3 {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Write down a strong \"why\""
+            textView.textColor = UIColor.systemGray3
+        }
+    }
+}

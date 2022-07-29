@@ -43,6 +43,8 @@ extension AddGoalViewController: UITableViewDataSource {
             case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "whyCell", for: indexPath) as! TextViewTableViewCell
                 cell.textView.text = "Write down a strong \"why\""
+                cell.textView.textColor = UIColor.systemGray3
+                cell.textView.delegate = self
                 if isEdit == true {
                     cell.textView.text = selectedGoal?.why
                 }
