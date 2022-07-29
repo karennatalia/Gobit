@@ -63,6 +63,7 @@ class AddHabitView: UIView {
         navTitle.centerY(inView: navBar)
     
         tableViewForm.anchor(top: navBar.bottomAnchor, left: self.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor)
+        tableViewForm.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
     }
     
     func setupTableView() {
@@ -104,6 +105,10 @@ class AddHabitView: UIView {
             delegate?.updateHabit()
             vc?.dismiss(animated: true)
         }
+    }
+    
+    @objc func hideKeyboard() {
+        self.endEditing(true)
     }
     
 }
