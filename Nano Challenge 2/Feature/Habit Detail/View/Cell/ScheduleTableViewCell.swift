@@ -8,7 +8,7 @@
 import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
-
+    
     private lazy var cardBackground: UIView = CustomCard()
     lazy var sunday: UILabel = CustomLabel(text: "S", style: FontStyle.subHeader, alignment: .center, color: .black)
     lazy var monday: UILabel = CustomLabel(text: "M", style: FontStyle.subHeader, alignment: .center, color: .black)
@@ -17,7 +17,7 @@ class ScheduleTableViewCell: UITableViewCell {
     lazy var thursday: UILabel = CustomLabel(text: "T", style: FontStyle.subHeader, alignment: .center, color: .black)
     lazy var friday: UILabel = CustomLabel(text: "F", style: FontStyle.subHeader, alignment: .center, color: .black)
     lazy var saturday: UILabel = CustomLabel(text: "S", style: FontStyle.subHeader, alignment: .center, color: .black)
-    private lazy var dayStack: UIStackView = createStackViewHorizontal()
+    private lazy var dayStack: UIStackView = UIStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -42,6 +42,11 @@ class ScheduleTableViewCell: UITableViewCell {
         dayStack.addArrangedSubview(thursday)
         dayStack.addArrangedSubview(friday)
         dayStack.addArrangedSubview(saturday)
+        
+        dayStack.axis = .horizontal
+        dayStack.alignment = .center
+        dayStack.distribution = .equalSpacing
+        dayStack.spacing = 8
     }
     
     func setupConstraint() {
@@ -55,5 +60,5 @@ class ScheduleTableViewCell: UITableViewCell {
         friday.anchor(width: 34, height: 34)
         saturday.anchor(width: 34, height: 34)
     }
-
+    
 }

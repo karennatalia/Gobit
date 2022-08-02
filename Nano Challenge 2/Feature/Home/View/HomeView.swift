@@ -10,7 +10,7 @@ import UIKit
 class HomeView: UIView {
     
     private lazy var scrollView = UIScrollView()
-    private lazy var contentView: UIStackView = createStackViewVertical()
+    private lazy var contentView: UIStackView = UIStackView()
     private lazy var titleLbl: UILabel = CustomLabel(text: "To Do", style: FontStyle.header, alignment: .left, color: .black)
     lazy var toDoTable: UITableView = CustomTableView(isScrollable: false, style: .plain)
     private lazy var quotesLbl: UILabel = CustomLabel(text: "Great things never come from comfort zone", style: FontStyle.title, alignment: .center, color: .lightGray)
@@ -40,6 +40,8 @@ class HomeView: UIView {
         self.addSubview(emptyState)
         contentView.addArrangedSubview(quotesLbl)
         contentView.addArrangedSubview(quotesWriterLbl)
+        
+        contentView.axis = .vertical
     }
     
     func setupConstraint() {

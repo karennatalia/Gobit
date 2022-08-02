@@ -51,7 +51,6 @@
 		5FA653D228909B640022ACA2 /* HabitDetailViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D128909B640022ACA2 /* HabitDetailViewController+Delegate.swift */; };
 		5FA653D428909B780022ACA2 /* HabitDetailViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D328909B780022ACA2 /* HabitDetailViewController+DataSource.swift */; };
 		5FA653D62890BC030022ACA2 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D52890BC030022ACA2 /* ScheduleTableViewCell.swift */; };
-		5FA653D92890C99E0022ACA2 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653D82890C99E0022ACA2 /* StackView.swift */; };
 		5FA653DB2890D43D0022ACA2 /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */; };
 		5FA653E62890EDF20022ACA2 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */; };
 		5FA653E82890EF450022ACA2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E72890EF450022ACA2 /* UIView+Ext.swift */; };
@@ -129,7 +128,6 @@
 		5FA653D128909B640022ACA2 /* HabitDetailViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitDetailViewController+Delegate.swift"; sourceTree = "<group>"; };
 		5FA653D328909B780022ACA2 /* HabitDetailViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitDetailViewController+DataSource.swift"; sourceTree = "<group>"; };
 		5FA653D52890BC030022ACA2 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
-		5FA653D82890C99E0022ACA2 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 		5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		5FA653E72890EF450022ACA2 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
@@ -443,7 +441,6 @@
 				5FA653A7288FAFF00022ACA2 /* Card.swift */,
 				5FA653AB288FEB0A0022ACA2 /* Images.swift */,
 				5F6848D3289921150069DD30 /* Buttons */,
-				5FA653D82890C99E0022ACA2 /* StackView.swift */,
 			);
 			path = "UI Component";
 			sourceTree = "<group>";
@@ -677,7 +674,6 @@
 				5FE37753289143AA00E44C6D /* AddGoalViewController+DataSource.swift in Sources */,
 				5F6848D72899298E0069DD30 /* EmptyState.swift in Sources */,
 				5FA65389288E8BBB0022ACA2 /* HomeView.swift in Sources */,
-				5FA653D92890C99E0022ACA2 /* StackView.swift in Sources */,
 				5FE3776C28914ECD00E44C6D /* PickScheduleView.swift in Sources */,
 				5FE377872891B5DB00E44C6D /* CoreDataManager.swift in Sources */,
 				5FE3776A28914EBF00E44C6D /* PickScheduleViewController.swift in Sources */,
