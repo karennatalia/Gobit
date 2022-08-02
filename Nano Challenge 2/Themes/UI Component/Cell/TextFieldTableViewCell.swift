@@ -9,7 +9,7 @@ import UIKit
 
 class TextFieldTableViewCell: UITableViewCell {
 
-    lazy var textField: UITextField = createTextField()
+    lazy var textField: UITextField = UITextField()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

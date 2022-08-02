@@ -10,7 +10,7 @@ import UIKit
 class HabitDetailView: UIView {
 
     private lazy var habitTitle: UILabel = CustomLabel(text: "Habit Title", style: FontStyle.header, alignment: .left, color: .black)
-    private lazy var habitDesc: UITextView = createTextView()
+    private lazy var habitDesc: UITextView = CustomTextView()
     private lazy var contentTableView: UITableView = createTableView(isScrollable: true)
     
     let vc: HabitDetailViewController?

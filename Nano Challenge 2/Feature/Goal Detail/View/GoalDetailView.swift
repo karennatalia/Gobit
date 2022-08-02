@@ -11,8 +11,8 @@ class GoalDetailView: UIView {
     
     private lazy var goalImage: UIImageView = createImage(imageName: "face.smiling")
     private lazy var goalTitle: UILabel = CustomLabel(text: "Goal Title", style: FontStyle.header, alignment: .center, color: .black)
-    private lazy var goalDesc: UITextView = createTextView()
-    private lazy var goalWhy: UITextView = createTextView()
+    private lazy var goalDesc: UITextView = CustomTextView()
+    private lazy var goalWhy: UITextView = CustomTextView()
     private lazy var levelBackground: UIView = createCard()
     private lazy var levelDetailBackground: UIView = createCard()
     private lazy var levelText: UILabel = CustomLabel(text: "Level", style: FontStyle.detail, alignment: .center, color: .black)

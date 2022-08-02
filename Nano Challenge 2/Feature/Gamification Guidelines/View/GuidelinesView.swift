@@ -11,7 +11,7 @@ class GuidelinesView: UIView {
 
     private lazy var navBar = NavBarClose()
     private lazy var navTitle: UILabel = CustomLabel(text: "Level Guidelines", style: FontStyle.systemDefaultBold, alignment: .center, color: .black)
-    private lazy var guidelinesText: UITextView = createTextView()
+    private lazy var guidelinesText: UITextView = CustomTextView()
     
     var vc: GuidelinesViewController?
     

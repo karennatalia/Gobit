@@ -9,7 +9,7 @@ import UIKit
 
 class TextGuidelinesTableViewCell: UITableViewCell {
 
-    lazy var textView: UITextView = createTextView()
+    lazy var textView: UITextView = CustomTextView()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
