@@ -13,8 +13,6 @@ extension HabitDetailViewController: UITableViewDataSource {
         switch section {
         case 0, 1:
             return 1
-//        case 2:
-//            return 4
         default:
             return 1
         }
@@ -30,8 +28,6 @@ extension HabitDetailViewController: UITableViewDataSource {
             return "SCHEDULE"
         case 1:
             return "PROGRESS"
-//        case 2:
-//            return "HISTORY TRACKER"
         default:
             return ""
         }
@@ -102,34 +98,8 @@ extension HabitDetailViewController: UITableViewDataSource {
                 cell.consistentNumber.text = "\(consistency)%"
             }
             return cell
-//        case 2:
-//            if indexPath.row == 0 {
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell1", for: indexPath) as! CalendarTableViewCellOne
-//                cell.selectionStyle = .none
-//                return cell
-//            }
-//            else if indexPath.row == 1 {
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell2", for: indexPath) as! CalendarTableViewCellTwo
-//                cell.selectionStyle = .none
-//                return cell
-//            }
-//            else if indexPath.row == 2 {
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell3", for: indexPath) as! CalendarTableViewCellThree
-//                cell.selectionStyle = .none
-//                cell.dateCollection.dataSource = self
-//                cell.dateCollection.delegate = self
-//                return cell
-//            }
-//            else if indexPath.row == 3 {
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell4", for: indexPath) as! CalendarTableViewCellFour
-//                return cell
-//            }
-//            else {
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell4", for: indexPath) as! CalendarTableViewCellFour
-//                return cell
-//            }
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell1", for: indexPath) as! CalendarTableViewCellOne
+            let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath) as! ScheduleTableViewCell
             return cell
         }
     }

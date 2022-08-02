@@ -61,10 +61,6 @@ class HabitDetailView: UIView {
     func setupTableView() {
         contentTableView.register(ScheduleTableViewCell.self, forCellReuseIdentifier: "scheduleCell")
         contentTableView.register(ProgressTableViewCell.self, forCellReuseIdentifier: "progressCell")
-//        contentTableView.register(CalendarTableViewCellOne.self, forCellReuseIdentifier: "calendarCell1")
-//        contentTableView.register(CalendarTableViewCellTwo.self, forCellReuseIdentifier: "calendarCell2")
-//        contentTableView.register(CalendarTableViewCellThree.self, forCellReuseIdentifier: "calendarCell3")
-//        contentTableView.register(CalendarTableViewCellFour.self, forCellReuseIdentifier: "calendarCell4")
         contentTableView.dataSource = vc
         contentTableView.delegate = vc
     }
