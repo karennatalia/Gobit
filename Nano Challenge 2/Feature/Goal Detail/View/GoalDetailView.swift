@@ -9,7 +9,7 @@ import UIKit
  
 class GoalDetailView: UIView {
     
-    private lazy var goalImage: UIImageView = createImage(imageName: "face.smiling")
+    private lazy var goalImage: UIImageView = CustomImage(imageName: "face.smiling")
     private lazy var goalTitle: UILabel = CustomLabel(text: "Goal Title", style: FontStyle.header, alignment: .center, color: .black)
     private lazy var goalDesc: UITextView = CustomTextView()
     private lazy var goalWhy: UITextView = CustomTextView()
@@ -22,12 +22,12 @@ class GoalDetailView: UIView {
     private lazy var healthText: UILabel = CustomLabel(text: "Health", style: FontStyle.detail, alignment: .left, color: .black)
     private lazy var tableViewTitle: UILabel = CustomLabel(text: "Habit System", style: FontStyle.header, alignment: .left, color: .black)
     lazy var habitTableView: UITableView = CustomTableView(isScrollable: true, style: .plain)
-    private lazy var progressExp: UIProgressView = createProgressView()
-    private lazy var heartOne: UIImageView = createImage(imageName: "heart.fill")
-    private lazy var heartTwo: UIImageView = createImage(imageName: "heart.fill")
-    private lazy var heartThree: UIImageView = createImage(imageName: "heart")
-    private lazy var heartFour: UIImageView = createImage(imageName: "heart.fill")
-    private lazy var heartFive: UIImageView = createImage(imageName: "heart.fill")
+    private lazy var progressExp: UIProgressView = UIProgressView()
+    private lazy var heartOne: UIImageView = CustomImage(imageName: "heart.fill")
+    private lazy var heartTwo: UIImageView = CustomImage(imageName: "heart.fill")
+    private lazy var heartThree: UIImageView = CustomImage(imageName: "heart")
+    private lazy var heartFour: UIImageView = CustomImage(imageName: "heart.fill")
+    private lazy var heartFive: UIImageView = CustomImage(imageName: "heart.fill")
     private lazy var addHabitBtn: UIButton = CustomImageButton(imageName: "plus.circle", color: UIColor.primGreen)
     private lazy var lineTop: UIView = UIView()
     private lazy var lineBottom: UIView = UIView()
@@ -95,6 +95,8 @@ class GoalDetailView: UIView {
         
         lineTop.backgroundColor = .lightGray
         lineBottom.backgroundColor = .lightGray
+        
+        progressExp.tintColor = .secGreen
     }
     
     func setupUIContent() {

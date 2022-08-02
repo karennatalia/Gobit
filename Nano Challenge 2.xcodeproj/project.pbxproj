@@ -43,7 +43,6 @@
 		5FA653B528901A2C0022ACA2 /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653B428901A2C0022ACA2 /* GoalDetailViewController.swift */; };
 		5FA653C228901BF20022ACA2 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C128901BF20022ACA2 /* AddGoalViewController.swift */; };
 		5FA653C42890203A0022ACA2 /* GoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C32890203A0022ACA2 /* GoalDetailView.swift */; };
-		5FA653C6289091790022ACA2 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C5289091790022ACA2 /* ProgressView.swift */; };
 		5FA653C8289095290022ACA2 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C7289095290022ACA2 /* HabitTableViewCell.swift */; };
 		5FA653CA289096590022ACA2 /* GoalDetailViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653C9289096590022ACA2 /* GoalDetailViewController+Delegate.swift */; };
 		5FA653CC289096660022ACA2 /* GoalDetailViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653CB289096660022ACA2 /* GoalDetailViewController+DataSource.swift */; };
@@ -56,7 +55,6 @@
 		5FA653DB2890D43D0022ACA2 /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */; };
 		5FA653E62890EDF20022ACA2 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */; };
 		5FA653E82890EF450022ACA2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E72890EF450022ACA2 /* UIView+Ext.swift */; };
-		5FA653ED2890F5590022ACA2 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653EC2890F5590022ACA2 /* CollectionView.swift */; };
 		5FA653EF2890F9AF0022ACA2 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */; };
 		5FAC9BED28920968007CEBD0 /* AddGoalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */; };
 		5FAC9BEF28922964007CEBD0 /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC9BEE28922964007CEBD0 /* Convert.swift */; };
@@ -123,7 +121,6 @@
 		5FA653B428901A2C0022ACA2 /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
 		5FA653C128901BF20022ACA2 /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
 		5FA653C32890203A0022ACA2 /* GoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailView.swift; sourceTree = "<group>"; };
-		5FA653C5289091790022ACA2 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		5FA653C7289095290022ACA2 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		5FA653C9289096590022ACA2 /* GoalDetailViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalDetailViewController+Delegate.swift"; sourceTree = "<group>"; };
 		5FA653CB289096660022ACA2 /* GoalDetailViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalDetailViewController+DataSource.swift"; sourceTree = "<group>"; };
@@ -136,7 +133,6 @@
 		5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 		5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		5FA653E72890EF450022ACA2 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		5FA653EC2890F5590022ACA2 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalDelegate.swift; sourceTree = "<group>"; };
 		5FAC9BEE28922964007CEBD0 /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
@@ -444,12 +440,10 @@
 				5FA65399288F7BB30022ACA2 /* TableView.swift */,
 				5F6848D62899298E0069DD30 /* EmptyState.swift */,
 				5F6848D828992AE80069DD30 /* NavBar.swift */,
-				5F6848D3289921150069DD30 /* Buttons */,
 				5FA653A7288FAFF00022ACA2 /* Card.swift */,
 				5FA653AB288FEB0A0022ACA2 /* Images.swift */,
-				5FA653C5289091790022ACA2 /* ProgressView.swift */,
+				5F6848D3289921150069DD30 /* Buttons */,
 				5FA653D82890C99E0022ACA2 /* StackView.swift */,
-				5FA653EC2890F5590022ACA2 /* CollectionView.swift */,
 			);
 			path = "UI Component";
 			sourceTree = "<group>";
@@ -648,9 +642,7 @@
 				5FA653EF2890F9AF0022ACA2 /* DateCollectionViewCell.swift in Sources */,
 				5FE3775D2891479800E44C6D /* AddHabitViewController+Delegate.swift in Sources */,
 				5F53213128930A2600A67AA7 /* Goal+CoreDataProperties.swift in Sources */,
-				5FA653ED2890F5590022ACA2 /* CollectionView.swift in Sources */,
 				5FA653D62890BC030022ACA2 /* ScheduleTableViewCell.swift in Sources */,
-				5FA653C6289091790022ACA2 /* ProgressView.swift in Sources */,
 				5F9DA5CC2893511600E0A100 /* GuidelinesView.swift in Sources */,
 				5FA65391288EA42E0022ACA2 /* HomeViewController.swift in Sources */,
 				5FE377512891439F00E44C6D /* AddGoalViewController+Delegate.swift in Sources */,

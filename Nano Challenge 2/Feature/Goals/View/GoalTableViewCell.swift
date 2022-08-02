@@ -9,7 +9,7 @@ import UIKit
 
 class GoalTableViewCell: UITableViewCell {
 
-    lazy var goalImage: UIImageView = createImage(imageName: "face.smiling")
+    lazy var goalImage: UIImageView = CustomImage(imageName: "face.smiling")
     lazy var goalTitle: UILabel = CustomLabel(text: "Goal Title", style: FontStyle.titleBold, alignment: .left, color: .black)
     lazy var goalDate: UILabel = CustomLabel(text: "Started xx July 2022", style: FontStyle.detail, alignment: .center, color: .black)
     lazy var cardBackground: UIView = CustomCard()

@@ -8,9 +8,16 @@
 import Foundation
 import UIKit
 
-func createImage(imageName: String) -> UIImageView {
-    let imageView = UIImageView()
-    imageView.image = UIImage(systemName: imageName)
-    imageView.contentMode = .scaleAspectFit
-    return imageView
+class CustomImage: UIImageView {
+    required init(imageName: String) {
+        super.init(frame: .zero)
+        
+        self.image = UIImage(systemName: imageName)
+        self.contentMode = .scaleAspectFit
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
+
