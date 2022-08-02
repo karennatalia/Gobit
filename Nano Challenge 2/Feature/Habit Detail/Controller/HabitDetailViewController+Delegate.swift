@@ -37,7 +37,3 @@ extension HabitDetailViewController: HabitAddedDelegate {
         habitDetailView?.setupUIContent()
     }
 }
-
-extension HabitDetailViewController: UICollectionViewDelegate {
-    
-}

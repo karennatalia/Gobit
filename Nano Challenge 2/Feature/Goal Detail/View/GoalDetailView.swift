@@ -7,6 +7,11 @@
 
 import UIKit
  
+protocol GoalDetailDelegate {
+    func toAddHabit()
+    func presentGuidelines()
+}
+
 class GoalDetailView: UIView {
     
     private lazy var goalImage: UIImageView = CustomImage(imageName: "face.smiling")
@@ -36,10 +41,12 @@ class GoalDetailView: UIView {
     
     let vc: GoalDetailViewController?
     var goal: Goal?
+    var delegate: GoalDetailDelegate?
     
     required init(vc: GoalDetailViewController, goal: Goal) {
         self.vc = vc
         self.goal = goal
+        self.delegate = vc
         super.init(frame: .zero)
         
         setupUI()
@@ -250,16 +257,11 @@ class GoalDetailView: UIView {
     }
     
     @objc func toAddHabit() {
-        let addHabitVC = AddHabitViewController()
-        addHabitVC.selectedGoal = goal
-        addHabitVC.isEdit = false
-        addHabitVC.delegateVC = vc
-        let nav = UINavigationController(rootViewController: addHabitVC)
-        vc!.present(nav, animated: true)
+        delegate?.toAddHabit()
     }
     
     @objc func toGuidelines() {
-        vc!.present(GuidelinesViewController(), animated: true)
+        delegate?.presentGuidelines()
     }
     
 }

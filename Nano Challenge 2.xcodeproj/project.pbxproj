@@ -55,7 +55,6 @@
 		5FA653E62890EDF20022ACA2 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */; };
 		5FA653E82890EF450022ACA2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653E72890EF450022ACA2 /* UIView+Ext.swift */; };
 		5FA653EF2890F9AF0022ACA2 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */; };
-		5FAC9BED28920968007CEBD0 /* AddGoalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */; };
 		5FAC9BEF28922964007CEBD0 /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC9BEE28922964007CEBD0 /* Convert.swift */; };
 		5FE377492891273700E44C6D /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE377482891273700E44C6D /* UIColor+Ext.swift */; };
 		5FE3774B2891306400E44C6D /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3774A2891306300E44C6D /* AddGoalView.swift */; };
@@ -132,7 +131,6 @@
 		5FA653E52890EDF20022ACA2 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		5FA653E72890EF450022ACA2 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
-		5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalDelegate.swift; sourceTree = "<group>"; };
 		5FAC9BEE28922964007CEBD0 /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
 		5FE377482891273700E44C6D /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		5FE3774A2891306300E44C6D /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
@@ -225,7 +223,7 @@
 				5FAC9BF028925488007CEBD0 /* Helper */,
 				5FE377912891B88F00E44C6D /* Data */,
 				5FA653E42890EDDA0022ACA2 /* Extensions */,
-				5FA6538C288E91B00022ACA2 /* Themes */,
+				5FA653D72890C9870022ACA2 /* UI Component */,
 				5FA65384288E8B650022ACA2 /* Feature */,
 				5FA6536D288E8A340022ACA2 /* AppDelegate.swift */,
 				5FA6536F288E8A340022ACA2 /* SceneDelegate.swift */,
@@ -239,9 +237,9 @@
 		5FA65384288E8B650022ACA2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				5FA65371288E8A340022ACA2 /* ViewController.swift */,
 				5F9DA5C3289350C500E0A100 /* Gamification Guidelines */,
 				5FE3776628914E9D00E44C6D /* Pick Schedule */,
-				5FA65371288E8A340022ACA2 /* ViewController.swift */,
 				5FA653BD28901BCF0022ACA2 /* Add Habit */,
 				5FA653BA28901BBC0022ACA2 /* Add Goal */,
 				5FA653B628901BA10022ACA2 /* Habit Detail */,
@@ -277,14 +275,6 @@
 				5FA6539D288F7EF80022ACA2 /* HomeViewController+DataSource.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		5FA6538C288E91B00022ACA2 /* Themes */ = {
-			isa = PBXGroup;
-			children = (
-				5FA653D72890C9870022ACA2 /* UI Component */,
-			);
-			path = Themes;
 			sourceTree = "<group>";
 		};
 		5FA65392288EA7290022ACA2 /* Goals */ = {
@@ -381,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				5FE3774A2891306300E44C6D /* AddGoalView.swift */,
-				5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -644,7 +633,6 @@
 				5FA653DB2890D43D0022ACA2 /* ProgressTableViewCell.swift in Sources */,
 				5F53213228930A2600A67AA7 /* Habit+CoreDataClass.swift in Sources */,
 				5FE3775B2891476300E44C6D /* AddHabitView.swift in Sources */,
-				5FAC9BED28920968007CEBD0 /* AddGoalDelegate.swift in Sources */,
 				5FA653CE289099480022ACA2 /* HabitDetailViewController.swift in Sources */,
 				5FE3776528914CC800E44C6D /* PickScheduleTableViewCell.swift in Sources */,
 				5FA6539E288F7EF80022ACA2 /* HomeViewController+DataSource.swift in Sources */,

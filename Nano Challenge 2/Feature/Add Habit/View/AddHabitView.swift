@@ -11,13 +11,19 @@ protocol HabitAddedDelegate {
     func updateHabit()
 }
 
+protocol AddHabitDelegate {
+    func cancelAdd()
+    func validateForms(title: String, desc: String, schedule: String)
+}
+
 class AddHabitView: UIView {
     
     private lazy var navBar = CustomNavBar(leftButtonActive: true, rightButtonActive: true, leftText: "Cancel", righText: "Done")
     private lazy var navTitle: UILabel = CustomLabel(text: "New Habit", style: FontStyle.systemDefaultBold, alignment: .center, color: .black)
     lazy var tableViewForm: UITableView = CustomTableView(isScrollable: false, style: .insetGrouped)
     
-    var delegate: HabitAddedDelegate?
+    var habitAddedDelegate: HabitAddedDelegate?
+    var addHabitDelegate: AddHabitDelegate?
     
     let vc: AddHabitViewController?
     let goal: Goal?
@@ -25,6 +31,7 @@ class AddHabitView: UIView {
     required init(vc: AddHabitViewController, goal: Goal, isEdit: Bool, delegateVC: UIViewController) {
         self.vc = vc
         self.goal = goal
+        self.addHabitDelegate = vc
         super.init(frame: .zero)
         
         setupUI()
@@ -32,11 +39,11 @@ class AddHabitView: UIView {
         setupTableView()
         
         if isEdit == true {
-            self.delegate = delegateVC as! HabitDetailViewController
+            self.habitAddedDelegate = delegateVC as! HabitDetailViewController
             setupEditMode()
         }
         else {
-            self.delegate = delegateVC as! GoalDetailViewController
+            self.habitAddedDelegate = delegateVC as! GoalDetailViewController
         }
         
         navBar.leftButton?.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
@@ -78,29 +85,15 @@ class AddHabitView: UIView {
     }
     
     @objc func cancelAction() {
-        vc?.dismiss(animated: true)
+        addHabitDelegate?.cancelAdd()
     }
     
     @objc func doneAction() {
         let title = (tableViewForm.cellForRow(at: IndexPath(row: 0, section: 0)) as! TextFieldTableViewCell).textField.text
         let desc = (tableViewForm.cellForRow(at: IndexPath(row: 1, section: 0)) as! TextFieldTableViewCell).textField.text
         let schedule = (tableViewForm.cellForRow(at: IndexPath(row: 0, section: 1)) as! PickScheduleTableViewCell).pickedDayLabel.text
-        if title == "" {
-            vc?.contentAlert(title: "Habit Title is Empty", message: "Please fill out the habit title")
-        }
-        else if schedule == "" {
-            vc?.contentAlert(title: "No Schedule Picked", message: "Please pick minimum one day to do the habit")
-        }
-        else {
-            if vc?.isEdit == false {
-                vc?.habitRepo.add(title: title ?? "", schedule: vc?.selectedDay ?? [], desc: desc ?? "", goal: vc?.selectedGoal ?? Goal())
-            }
-            else {
-                vc?.habitRepo.update(item: vc?.selectedHabit ?? Habit(), newTitle: title ?? "", newDesc: desc ?? "", schedule: vc?.selectedDay ?? [])
-            }
-            delegate?.updateHabit()
-            vc?.dismiss(animated: true)
-        }
+        
+        addHabitDelegate?.validateForms(title: title!, desc: desc!, schedule: schedule!)
     }
     
 //    @objc func hideKeyboard() {

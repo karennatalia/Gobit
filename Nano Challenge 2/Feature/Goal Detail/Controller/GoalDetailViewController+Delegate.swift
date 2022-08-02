@@ -47,3 +47,18 @@ extension GoalDetailViewController: HabitAddedDelegate {
         goalDetailView?.updateEmptyStateConstraint()
     }
 }
+
+extension GoalDetailViewController: GoalDetailDelegate {
+    func toAddHabit() {
+        let addHabitVC = AddHabitViewController()
+        addHabitVC.selectedGoal = selectedGoal
+        addHabitVC.isEdit = false
+        addHabitVC.delegateVC = self
+        let nav = UINavigationController(rootViewController: addHabitVC)
+        present(nav, animated: true)
+    }
+    
+    func presentGuidelines() {
+        present(GuidelinesViewController(), animated: true)
+    }
+}

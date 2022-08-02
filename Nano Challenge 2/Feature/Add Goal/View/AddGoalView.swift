@@ -7,6 +7,14 @@
 
 import UIKit
 
+protocol AddGoalDelegate {
+    func validateField()
+}
+
+protocol GoalAddedDelegate {
+    func reloadGoals()
+}
+
 class AddGoalView: UIView {
 
     private lazy var navBar = CustomNavBar(leftButtonActive: true, rightButtonActive: true, leftText: "Cancel", righText: "Done")

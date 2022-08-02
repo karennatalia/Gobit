@@ -41,3 +41,28 @@ extension AddHabitViewController: SchedulePickedDelegate {
         addHabitView?.tableViewForm.reloadRows(at: [IndexPath(row: 0, section: 1)], with: .automatic)
     }
 }
+
+extension AddHabitViewController: AddHabitDelegate {
+    func cancelAdd() {
+        dismiss(animated: true)
+    }
+    
+    func validateForms(title: String, desc: String, schedule: String) {
+        if title == "" {
+            self.contentAlert(title: "Habit Title is Empty", message: "Please fill out the habit title")
+        }
+        else if schedule == "" {
+            self.contentAlert(title: "No Schedule Picked", message: "Please pick minimum one day to do the habit")
+        }
+        else {
+            if isEdit == false {
+                habitRepo.add(title: title, schedule: selectedDay, desc: desc , goal: selectedGoal ?? Goal())
+            }
+            else {
+                habitRepo.update(item: selectedHabit ?? Habit(), newTitle: title, newDesc: desc, schedule: selectedDay)
+            }
+            addHabitView?.habitAddedDelegate?.updateHabit()
+            dismiss(animated: true)
+        }
+    }
+}
