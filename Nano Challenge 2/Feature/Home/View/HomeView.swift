@@ -11,10 +11,10 @@ class HomeView: UIView {
     
     private lazy var scrollView = UIScrollView()
     private lazy var contentView: UIStackView = createStackViewVertical()
-    private lazy var titleLbl: UILabel = createBlackSemiboldLabel(text: "To Do", size: 20, alignment: .left)
+    private lazy var titleLbl: UILabel = CustomLabel(text: "To Do", style: FontStyle.header, alignment: .left, color: .black)
     lazy var toDoTable: UITableView = createTableView(isScrollable: false)
-    private lazy var quotesLbl: UILabel = createGreyRegularLabel(text: "Great things never come from comfort zone", size: 14, alignment: .center)
-    private lazy var quotesWriterLbl: UILabel = createGreyRegularLabel(text: "~Ben Francia~", size: 14, alignment: .center)
+    private lazy var quotesLbl: UILabel = CustomLabel(text: "Great things never come from comfort zone", style: FontStyle.title, alignment: .center, color: .lightGray)
+    private lazy var quotesWriterLbl: UILabel = CustomLabel(text: "~Ben Francia~", style: FontStyle.title, alignment: .center, color: .lightGray)
     private lazy var emptyState = EmptyState()
     
     let vc: HomeViewController?

@@ -9,8 +9,8 @@ import UIKit
 
 class PickScheduleTableViewCell: UITableViewCell {
     
-    lazy var formTitle: UILabel = createBlackRegularLabel(text: "Schedule", size: 17, alignment: .left)
-    lazy var pickedDayLabel: UILabel = createGreyRegularLabel(text: "day", size: 17, alignment: .right)
+    lazy var formTitle: UILabel = CustomLabel(text: "Schedule", style: FontStyle.systemDefault, alignment: .left, color: .black)
+    lazy var pickedDayLabel: UILabel = CustomLabel(text: "day", style: FontStyle.systemDefault, alignment: .right, color: .lightGray)
     lazy var pickButton: UIButton = createImageButton(imageName: "chevron.right", color: .lightGray)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

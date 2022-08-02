@@ -8,56 +8,17 @@
 import Foundation
 import UIKit
 
-func createBlackRegularLabel(text: String, size: CGFloat, alignment: NSTextAlignment) -> UILabel {
-    let label = UILabel()
-    label.text = text
-    label.font = UIFont.systemFont(ofSize: size, weight: .regular)
-    label.textColor = UIColor.black
-    label.textAlignment = alignment
-    return label
-}
-
-func createBlackSemiboldLabel(text: String, size: CGFloat, alignment: NSTextAlignment) -> UILabel {
-    let label = UILabel()
-    label.text = text
-    label.font = UIFont.systemFont(ofSize: size, weight: .semibold)
-    label.textColor = UIColor.black
-    label.textAlignment = alignment
-    return label
-}
-
-func createGreyRegularLabel(text: String, size: CGFloat, alignment: NSTextAlignment) -> UILabel {
-    let label = UILabel()
-    label.text = text
-    label.font = UIFont.systemFont(ofSize: size, weight: .regular)
-    label.textColor = UIColor.lightGray
-    label.textAlignment = alignment
-    return label
-}
-
-func createGreySemiboldLabel(text: String, size: CGFloat, alignment: NSTextAlignment) -> UILabel {
-    let label = UILabel()
-    label.text = text
-    label.font = UIFont.systemFont(ofSize: size, weight: .semibold)
-    label.textColor = UIColor.lightGray
-    label.textAlignment = alignment
-    return label
-}
-
-func createGreenRegularLabel(text: String, size: CGFloat, alignment: NSTextAlignment) -> UILabel {
-    let label = UILabel()
-    label.text = text
-    label.font = UIFont.systemFont(ofSize: size, weight: .regular)
-    label.textColor = UIColor.primGreen
-    label.textAlignment = alignment
-    return label
-}
-
-func createGreenSemiboldLabel(text: String, size: CGFloat, alignment: NSTextAlignment) -> UILabel {
-    let label = UILabel()
-    label.text = text
-    label.font = UIFont.systemFont(ofSize: size, weight: .semibold)
-    label.textColor = UIColor.primGreen
-    label.textAlignment = alignment
-    return label
+class CustomLabel: UILabel {
+    required init(text: String, style: UIFont, alignment: NSTextAlignment, color: UIColor) {
+        super.init(frame: .zero)
+        
+        self.text = text
+        self.font = style
+        self.textColor = color
+        self.textAlignment = alignment
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

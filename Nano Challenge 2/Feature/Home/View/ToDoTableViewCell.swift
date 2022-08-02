@@ -11,7 +11,7 @@ class ToDoTableViewCell: UITableViewCell {
     
     var didHabitTapped: () -> ()  = { }
     
-    lazy var title: UILabel = createBlackRegularLabel(text: "Habit Title", size: 14, alignment: .left)
+    lazy var title: UILabel = CustomLabel(text: "Habit Title", style: FontStyle.title, alignment: .left, color: .black)
     lazy var doneButton = UIButton()
     private lazy var cardBackground: UIView = createCard()
     

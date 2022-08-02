@@ -9,10 +9,10 @@ import UIKit
 
 class CalendarTableViewCellFour: UITableViewCell {
     
-    private lazy var greenCircle: UILabel = createBlackRegularLabel(text: "", size: 10, alignment: .center)
-    private lazy var greenDesc: UILabel = createBlackRegularLabel(text: "You did the habit!", size: 10, alignment: .left)
-    private lazy var outlineCircle: UILabel = createBlackRegularLabel(text: "", size: 10, alignment: .center)
-    private lazy var outlineDesc: UILabel = createBlackRegularLabel(text: "You missed the habit :(", size: 10, alignment: .left)
+    private lazy var greenCircle: UILabel = CustomLabel(text: "", style: FontStyle.detail, alignment: .center, color: .black)
+    private lazy var greenDesc: UILabel = CustomLabel(text: "You did the habit!", style: FontStyle.detail, alignment: .left, color: .black)
+    private lazy var outlineCircle: UILabel = CustomLabel(text: "", style: FontStyle.detail, alignment: .center, color: .black)
+    private lazy var outlineDesc: UILabel = CustomLabel(text: "You missed the habit :(", style: FontStyle.detail, alignment: .left, color: .black)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

@@ -9,7 +9,7 @@ import UIKit
 
 class ToggleTableViewCell: UITableViewCell {
 
-    lazy var formTitle: UILabel = createBlackRegularLabel(text: "Remind Me", size: 17, alignment: .left)
+    lazy var formTitle: UILabel = CustomLabel(text: "Remind Me", style: FontStyle.systemDefaultBold, alignment: .left, color: .black)
     lazy var toggle: UISwitch = createToggle()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

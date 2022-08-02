@@ -27,8 +27,8 @@ func createHorizontalLine() -> UIView {
 class EmptyState: UIView {
     
     lazy var image: UIImageView = createImage(imageName: "questionmark.app")
-    lazy var stateTitle: UILabel = createGreyRegularLabel(text: "State Title", size: 16, alignment: .center)
-    lazy var stateDesc: UILabel = createGreyRegularLabel(text: "State Desc", size: 12, alignment: .center)
+    lazy var stateTitle: UILabel = CustomLabel(text: "State Title", style: FontStyle.subHeader, alignment: .center, color: .lightGray)
+    lazy var stateDesc: UILabel = CustomLabel(text: "State Desc", style: FontStyle.detail, alignment: .center, color: .lightGray)
     
     required init() {
         super.init(frame: .zero)

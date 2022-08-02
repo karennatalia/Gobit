@@ -10,7 +10,7 @@ import UIKit
 class GuidelinesView: UIView {
 
     private lazy var navBar = NavBarClose()
-    private lazy var navTitle: UILabel = createBlackSemiboldLabel(text: "Level Guidelines", size: 17, alignment: .center)
+    private lazy var navTitle: UILabel = CustomLabel(text: "Level Guidelines", style: FontStyle.systemDefaultBold, alignment: .center, color: .black)
     private lazy var guidelinesText: UITextView = createTextView()
     
     var vc: GuidelinesViewController?

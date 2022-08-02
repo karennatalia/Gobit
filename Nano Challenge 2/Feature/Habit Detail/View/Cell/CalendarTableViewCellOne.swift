@@ -10,7 +10,7 @@ import SwiftUI
 
 class CalendarTableViewCellOne: UITableViewCell {
 
-    private lazy var monthTitle: UILabel = createBlackSemiboldLabel(text: "July 2022", size: 16, alignment: .left)
+    private lazy var monthTitle: UILabel = CustomLabel(text: "July 2022", style: FontStyle.subHeaderBold, alignment: .left, color: .black)
     private lazy var leftButton: UIButton = createImageButton(imageName: "chevron.left", color: UIColor.primGreen)
     private lazy var rightButton: UIButton = createImageButton(imageName: "chevron.right", color: UIColor.primGreen)
     

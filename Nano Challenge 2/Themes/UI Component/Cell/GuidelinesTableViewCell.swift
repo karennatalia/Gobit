@@ -9,7 +9,7 @@ import UIKit
 
 class GuidelinesTableViewCell: UITableViewCell {
 
-    private lazy var guidelinesLabel: UILabel = createGreenRegularLabel(text: "View Guidelines", size: 16, alignment: .left)
+    private lazy var guidelinesLabel: UILabel = CustomLabel(text: "View Guidelines", style: FontStyle.subHeader, alignment: .left, color: .secGreen)
     private lazy var chevronButton: UIButton = createImageButton(imageName: "chevron.down", color: UIColor.primGreen)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

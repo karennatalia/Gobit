@@ -10,8 +10,8 @@ import UIKit
 class HabitTableViewCell: UITableViewCell {
 
     lazy var cardBackground: UIView = createCard()
-    lazy var habitTitle: UILabel = createBlackSemiboldLabel(text: "Habit Title", size: 16, alignment: .left)
-    lazy var habitDate: UILabel = createBlackRegularLabel(text: "Started xx July 2022", size: 12, alignment: .left)
+    lazy var habitTitle: UILabel = CustomLabel(text: "Habit Title", style: FontStyle.subHeaderBold, alignment: .left, color: .black)
+    lazy var habitDate: UILabel = CustomLabel(text: "Started xx July 2022", style: FontStyle.detail, alignment: .left, color: .black)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

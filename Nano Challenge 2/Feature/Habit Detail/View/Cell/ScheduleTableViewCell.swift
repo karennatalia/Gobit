@@ -10,13 +10,13 @@ import UIKit
 class ScheduleTableViewCell: UITableViewCell {
 
     private lazy var cardBackground: UIView = createCard()
-    lazy var sunday: UILabel = createBlackRegularLabel(text: "S", size: 16, alignment: .center)
-    lazy var monday: UILabel = createBlackRegularLabel(text: "M", size: 16, alignment: .center)
-    lazy var tuesday: UILabel = createBlackRegularLabel(text: "T", size: 16, alignment: .center)
-    lazy var wednesday: UILabel = createBlackRegularLabel(text: "W", size: 16, alignment: .center)
-    lazy var thursday: UILabel = createBlackRegularLabel(text: "T", size: 16, alignment: .center)
-    lazy var friday: UILabel = createBlackRegularLabel(text: "F", size: 16, alignment: .center)
-    lazy var saturday: UILabel = createBlackRegularLabel(text: "S", size: 16, alignment: .center)
+    lazy var sunday: UILabel = CustomLabel(text: "S", style: FontStyle.subHeader, alignment: .center, color: .black)
+    lazy var monday: UILabel = CustomLabel(text: "M", style: FontStyle.subHeader, alignment: .center, color: .black)
+    lazy var tuesday: UILabel = CustomLabel(text: "T", style: FontStyle.subHeader, alignment: .center, color: .black)
+    lazy var wednesday: UILabel = CustomLabel(text: "W", style: FontStyle.subHeader, alignment: .center, color: .black)
+    lazy var thursday: UILabel = CustomLabel(text: "T", style: FontStyle.subHeader, alignment: .center, color: .black)
+    lazy var friday: UILabel = CustomLabel(text: "F", style: FontStyle.subHeader, alignment: .center, color: .black)
+    lazy var saturday: UILabel = CustomLabel(text: "S", style: FontStyle.subHeader, alignment: .center, color: .black)
     private lazy var dayStack: UIStackView = createStackViewHorizontal()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

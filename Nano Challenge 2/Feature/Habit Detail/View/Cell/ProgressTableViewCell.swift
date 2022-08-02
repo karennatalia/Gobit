@@ -12,15 +12,14 @@ class ProgressTableViewCell: UITableViewCell {
     private lazy var cardBackgroundLeft: UIView = createCard()
     private lazy var cardBackgroundMid: UIView = createCard()
     private lazy var cardBackgroundRight: UIView = createCard()
-    private lazy var doneText: UILabel = createBlackRegularLabel(text: "Done", size: 12, alignment: .center)
-    lazy var doneNumber: UILabel = createGreenSemiboldLabel(text: "10", size: 30, alignment: .center)
-    private lazy var timesDoneText: UILabel = createBlackRegularLabel(text: "times", size: 10, alignment: .center)
-    private lazy var missedText: UILabel = createBlackRegularLabel(text: "Missed", size: 12, alignment: .center)
-    lazy var missedNumber: UILabel = createGreenSemiboldLabel(text: "2", size: 30, alignment: .center)
-    private lazy var timesMissedText: UILabel = createBlackRegularLabel(text: "times", size: 10, alignment: .center)
-    private lazy var consistentText: UILabel = createBlackRegularLabel(text: "Consistency", size: 12, alignment: .center)
-    lazy var consistentNumber: UILabel = createGreenSemiboldLabel(text: "90%", size: 30, alignment: .center)
-    
+    private lazy var doneText: UILabel = CustomLabel(text: "Done", style: FontStyle.detail, alignment: .center, color: .black)
+    lazy var doneNumber: UILabel = CustomLabel(text: "XX", style: FontStyle.hugeText, alignment: .center, color: .secGreen)
+    private lazy var timesDoneText: UILabel = CustomLabel(text: "times", style: FontStyle.detail, alignment: .center, color: .black)
+    private lazy var missedText: UILabel = CustomLabel(text: "Missed", style: FontStyle.detail, alignment: .center, color: .black)
+    lazy var missedNumber: UILabel = CustomLabel(text: "XX", style: FontStyle.hugeText, alignment: .center, color: .secGreen)
+    private lazy var timesMissedText: UILabel = CustomLabel(text: "times", style: FontStyle.detail, alignment: .center, color: .black)
+    private lazy var consistentText: UILabel = CustomLabel(text: "Consistency", style: FontStyle.detail, alignment: .center, color: .black)
+    lazy var consistentNumber: UILabel = CustomLabel(text: "XX%", style: FontStyle.hugeText, alignment: .center, color: .secGreen)
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         

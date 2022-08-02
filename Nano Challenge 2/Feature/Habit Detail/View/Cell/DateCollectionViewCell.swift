@@ -9,7 +9,7 @@ import UIKit
 
 class DateCollectionViewCell: UICollectionViewCell {
     
-    lazy var dateLabel: UILabel = createBlackRegularLabel(text: "20", size: 16, alignment: .center)
+    lazy var dateLabel: UILabel = CustomLabel(text: "XX", style: FontStyle.header, alignment: .center, color: .black)
     
     override init(frame: CGRect) {
         super.init(frame: .zero)

@@ -9,13 +9,13 @@ import UIKit
 
 class CalendarTableViewCellTwo: UITableViewCell {
     
-    private lazy var sunday: UILabel = createGreenRegularLabel(text: "S", size: 16, alignment: .center)
-    private lazy var monday: UILabel = createGreenRegularLabel(text: "M", size: 16, alignment: .center)
-    private lazy var tuesday: UILabel = createGreenRegularLabel(text: "T", size: 16, alignment: .center)
-    private lazy var wednesday: UILabel = createGreenRegularLabel(text: "W", size: 16, alignment: .center)
-    private lazy var thursday: UILabel = createGreenRegularLabel(text: "T", size: 16, alignment: .center)
-    private lazy var friday: UILabel = createGreenRegularLabel(text: "F", size: 16, alignment: .center)
-    private lazy var saturday: UILabel = createGreenRegularLabel(text: "S", size: 16, alignment: .center)
+    private lazy var sunday: UILabel = CustomLabel(text: "S", style: FontStyle.subHeader, alignment: .center, color: .primGreen)
+    private lazy var monday: UILabel = CustomLabel(text: "M", style: FontStyle.subHeader, alignment: .center, color: .primGreen)
+    private lazy var tuesday: UILabel = CustomLabel(text: "T", style: FontStyle.subHeader, alignment: .center, color: .primGreen)
+    private lazy var wednesday: UILabel = CustomLabel(text: "W", style: FontStyle.subHeader, alignment: .center, color: .primGreen)
+    private lazy var thursday: UILabel = CustomLabel(text: "T", style: FontStyle.subHeader, alignment: .center, color: .primGreen)
+    private lazy var friday: UILabel = CustomLabel(text: "F", style: FontStyle.subHeader, alignment: .center, color: .primGreen)
+    private lazy var saturday: UILabel = CustomLabel(text: "S", style: FontStyle.subHeader, alignment: .center, color: .primGreen)
     private lazy var dayStack: UIStackView = createStackViewHorizontal()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
