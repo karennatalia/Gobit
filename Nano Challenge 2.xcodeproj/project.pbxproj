@@ -69,7 +69,6 @@
 		5FE3775B2891476300E44C6D /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3775A2891476300E44C6D /* AddHabitView.swift */; };
 		5FE3775D2891479800E44C6D /* AddHabitViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3775C2891479800E44C6D /* AddHabitViewController+Delegate.swift */; };
 		5FE3775F289147A300E44C6D /* AddHabitViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3775E289147A300E44C6D /* AddHabitViewController+DataSource.swift */; };
-		5FE3776328914A3900E44C6D /* ToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776228914A3900E44C6D /* ToggleTableViewCell.swift */; };
 		5FE3776528914CC800E44C6D /* PickScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */; };
 		5FE3776A28914EBF00E44C6D /* PickScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776928914EBF00E44C6D /* PickScheduleViewController.swift */; };
 		5FE3776C28914ECD00E44C6D /* PickScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3776B28914ECD00E44C6D /* PickScheduleView.swift */; };
@@ -149,7 +148,6 @@
 		5FE3775A2891476300E44C6D /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		5FE3775C2891479800E44C6D /* AddHabitViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddHabitViewController+Delegate.swift"; sourceTree = "<group>"; };
 		5FE3775E289147A300E44C6D /* AddHabitViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddHabitViewController+DataSource.swift"; sourceTree = "<group>"; };
-		5FE3776228914A3900E44C6D /* ToggleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTableViewCell.swift; sourceTree = "<group>"; };
 		5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		5FE3776928914EBF00E44C6D /* PickScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleViewController.swift; sourceTree = "<group>"; };
 		5FE3776B28914ECD00E44C6D /* PickScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleView.swift; sourceTree = "<group>"; };
@@ -420,7 +418,6 @@
 			isa = PBXGroup;
 			children = (
 				5FE3775A2891476300E44C6D /* AddHabitView.swift */,
-				5FE3776228914A3900E44C6D /* ToggleTableViewCell.swift */,
 				5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */,
 			);
 			path = View;
@@ -681,7 +678,6 @@
 				5FE3776E28915C0500E44C6D /* PickScheduleViewController+Delegate.swift in Sources */,
 				5FA6536E288E8A340022ACA2 /* AppDelegate.swift in Sources */,
 				5FA653AA288FE5C40022ACA2 /* GoalTableViewCell.swift in Sources */,
-				5FE3776328914A3900E44C6D /* ToggleTableViewCell.swift in Sources */,
 				5FE377952891B8EC00E44C6D /* GoalRepository.swift in Sources */,
 				5FE3777028915C1400E44C6D /* PickScheduleViewController+DataSource.swift in Sources */,
 				5FE37753289143AA00E44C6D /* AddGoalViewController+DataSource.swift in Sources */,

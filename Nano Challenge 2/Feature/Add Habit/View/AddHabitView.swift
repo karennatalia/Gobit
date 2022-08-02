@@ -66,7 +66,6 @@ class AddHabitView: UIView {
     func setupTableView() {
         tableViewForm.register(TextFieldTableViewCell.self, forCellReuseIdentifier: "habitTitleCell")
         tableViewForm.register(TextFieldTableViewCell.self, forCellReuseIdentifier: "habitDescCell")
-        tableViewForm.register(ToggleTableViewCell.self, forCellReuseIdentifier: "remindToggleCell")
         tableViewForm.register(PickScheduleTableViewCell.self, forCellReuseIdentifier: "pickScheduleCell")
         tableViewForm.register(GuidelinesTableViewCell.self, forCellReuseIdentifier: "habitGuideTextCell")
         tableViewForm.register(TextGuidelinesTableViewCell.self, forCellReuseIdentifier: "habitGuideCell")

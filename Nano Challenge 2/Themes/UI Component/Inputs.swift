@@ -18,9 +18,3 @@ func createTextView() -> UITextView {
     tv.font = UIFont.systemFont(ofSize: 17)
     return tv
 }
-
-func createToggle() -> UISwitch {
-    let toggle = UISwitch()
-    toggle.onTintColor = UIColor.secGreen
-    return toggle
-}

@@ -52,19 +52,6 @@ extension AddHabitViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "pickScheduleCell", for: indexPath) as! PickScheduleTableViewCell
             cell.pickedDayLabel.text = pickedDayString(selectedDay: selectedDay)
             return cell
-//            switch indexPath.row {
-//            case 0:
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "habitTitleCell", for: indexPath) as! TextFieldTableViewCell
-//                cell.textField.placeholder = "Habit Title"
-//                return cell
-//            case 1:
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "remindToggleCell", for: indexPath) as! ToggleTableViewCell
-//                return cell
-//            default:
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "habitTitleCell", for: indexPath) as! TextFieldTableViewCell
-//                cell.textField.placeholder = "Habit Title"
-//                return cell
-//            }
         }
         else {
             switch indexPath.row {
