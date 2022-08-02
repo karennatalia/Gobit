@@ -9,7 +9,7 @@ import UIKit
 
 class AddGoalView: UIView {
 
-    private lazy var navBar = NavBar()
+    private lazy var navBar = CustomNavBar(leftButtonActive: true, rightButtonActive: true, leftText: "Cancel", righText: "Done")
     private lazy var navTitle: UILabel = CustomLabel(text: "New Goal", style: FontStyle.systemDefault, alignment: .center, color: .black)
     lazy var tableViewForm: UITableView = CustomTableView(isScrollable: false, style: .insetGrouped)
     

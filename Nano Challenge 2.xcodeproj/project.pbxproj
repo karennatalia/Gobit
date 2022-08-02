@@ -16,6 +16,8 @@
 		5F6848D028991CFB0069DD30 /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6848CF28991CFB0069DD30 /* FilledButton.swift */; };
 		5F6848D228991D0F0069DD30 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6848D128991D0F0069DD30 /* ImageButton.swift */; };
 		5F6848D5289923040069DD30 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6848D4289923040069DD30 /* TextView.swift */; };
+		5F6848D72899298E0069DD30 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6848D62899298E0069DD30 /* EmptyState.swift */; };
+		5F6848D928992AE80069DD30 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6848D828992AE80069DD30 /* NavBar.swift */; };
 		5F9DA5CA2893510700E0A100 /* GuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DA5C92893510700E0A100 /* GuidelinesViewController.swift */; };
 		5F9DA5CC2893511600E0A100 /* GuidelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DA5CB2893511600E0A100 /* GuidelinesView.swift */; };
 		5FA6536E288E8A340022ACA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6536D288E8A340022ACA2 /* AppDelegate.swift */; };
@@ -92,6 +94,8 @@
 		5F6848CF28991CFB0069DD30 /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
 		5F6848D128991D0F0069DD30 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		5F6848D4289923040069DD30 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		5F6848D62899298E0069DD30 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		5F6848D828992AE80069DD30 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		5F9DA5C92893510700E0A100 /* GuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesViewController.swift; sourceTree = "<group>"; };
 		5F9DA5CB2893511600E0A100 /* GuidelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesView.swift; sourceTree = "<group>"; };
 		5FA6536A288E8A340022ACA2 /* Nano Challenge 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -437,8 +441,10 @@
 				5FE37761289149D300E44C6D /* Cell */,
 				5FA6538E288E95700022ACA2 /* Labels.swift */,
 				5F6848D4289923040069DD30 /* TextView.swift */,
-				5F6848D3289921150069DD30 /* Buttons */,
 				5FA65399288F7BB30022ACA2 /* TableView.swift */,
+				5F6848D62899298E0069DD30 /* EmptyState.swift */,
+				5F6848D828992AE80069DD30 /* NavBar.swift */,
+				5F6848D3289921150069DD30 /* Buttons */,
 				5FA653A7288FAFF00022ACA2 /* Card.swift */,
 				5FA653AB288FEB0A0022ACA2 /* Images.swift */,
 				5FA653C5289091790022ACA2 /* ProgressView.swift */,
@@ -677,6 +683,7 @@
 				5FE377952891B8EC00E44C6D /* GoalRepository.swift in Sources */,
 				5FE3777028915C1400E44C6D /* PickScheduleViewController+DataSource.swift in Sources */,
 				5FE37753289143AA00E44C6D /* AddGoalViewController+DataSource.swift in Sources */,
+				5F6848D72899298E0069DD30 /* EmptyState.swift in Sources */,
 				5FA65389288E8BBB0022ACA2 /* HomeView.swift in Sources */,
 				5FA653D92890C99E0022ACA2 /* StackView.swift in Sources */,
 				5FE3776C28914ECD00E44C6D /* PickScheduleView.swift in Sources */,
@@ -686,6 +693,7 @@
 				5FA653AC288FEB0A0022ACA2 /* Images.swift in Sources */,
 				5FA65370288E8A340022ACA2 /* SceneDelegate.swift in Sources */,
 				5FA653D428909B780022ACA2 /* HabitDetailViewController+DataSource.swift in Sources */,
+				5F6848D928992AE80069DD30 /* NavBar.swift in Sources */,
 				5FA653D228909B640022ACA2 /* HabitDetailViewController+Delegate.swift in Sources */,
 				5FE37757289144CB00E44C6D /* TextViewTableViewCell.swift in Sources */,
 				5FE3775F289147A300E44C6D /* AddHabitViewController+DataSource.swift in Sources */,

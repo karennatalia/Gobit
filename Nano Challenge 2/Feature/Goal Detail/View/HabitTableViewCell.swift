@@ -9,7 +9,7 @@ import UIKit
 
 class HabitTableViewCell: UITableViewCell {
 
-    lazy var cardBackground: UIView = createCard()
+    lazy var cardBackground: UIView = CustomCard()
     lazy var habitTitle: UILabel = CustomLabel(text: "Habit Title", style: FontStyle.subHeaderBold, alignment: .left, color: .black)
     lazy var habitDate: UILabel = CustomLabel(text: "Started xx July 2022", style: FontStyle.detail, alignment: .left, color: .black)
     

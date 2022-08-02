@@ -9,7 +9,7 @@ import UIKit
 
 class GuidelinesView: UIView {
 
-    private lazy var navBar = NavBarClose()
+    private lazy var navBar = CustomNavBar(leftButtonActive: false, rightButtonActive: true, leftText: "", righText: "Close")
     private lazy var navTitle: UILabel = CustomLabel(text: "Level Guidelines", style: FontStyle.systemDefaultBold, alignment: .center, color: .black)
     private lazy var guidelinesText: UITextView = CustomTextView()
     

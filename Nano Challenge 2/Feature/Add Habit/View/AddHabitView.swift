@@ -13,7 +13,7 @@ protocol HabitAddedDelegate {
 
 class AddHabitView: UIView {
     
-    private lazy var navBar = NavBar()
+    private lazy var navBar = CustomNavBar(leftButtonActive: true, rightButtonActive: true, leftText: "Cancel", righText: "Done")
     private lazy var navTitle: UILabel = CustomLabel(text: "New Habit", style: FontStyle.systemDefaultBold, alignment: .center, color: .black)
     lazy var tableViewForm: UITableView = CustomTableView(isScrollable: false, style: .insetGrouped)
     

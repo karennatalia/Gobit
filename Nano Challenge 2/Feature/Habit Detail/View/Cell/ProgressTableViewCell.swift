@@ -9,9 +9,9 @@ import UIKit
 
 class ProgressTableViewCell: UITableViewCell {
     
-    private lazy var cardBackgroundLeft: UIView = createCard()
-    private lazy var cardBackgroundMid: UIView = createCard()
-    private lazy var cardBackgroundRight: UIView = createCard()
+    private lazy var cardBackgroundLeft: UIView = CustomCard()
+    private lazy var cardBackgroundMid: UIView = CustomCard()
+    private lazy var cardBackgroundRight: UIView = CustomCard()
     private lazy var doneText: UILabel = CustomLabel(text: "Done", style: FontStyle.detail, alignment: .center, color: .black)
     lazy var doneNumber: UILabel = CustomLabel(text: "XX", style: FontStyle.hugeText, alignment: .center, color: .secGreen)
     private lazy var timesDoneText: UILabel = CustomLabel(text: "times", style: FontStyle.detail, alignment: .center, color: .black)

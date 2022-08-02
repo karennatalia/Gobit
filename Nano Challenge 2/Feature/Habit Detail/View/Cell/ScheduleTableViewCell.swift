@@ -9,7 +9,7 @@ import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
 
-    private lazy var cardBackground: UIView = createCard()
+    private lazy var cardBackground: UIView = CustomCard()
     lazy var sunday: UILabel = CustomLabel(text: "S", style: FontStyle.subHeader, alignment: .center, color: .black)
     lazy var monday: UILabel = CustomLabel(text: "M", style: FontStyle.subHeader, alignment: .center, color: .black)
     lazy var tuesday: UILabel = CustomLabel(text: "T", style: FontStyle.subHeader, alignment: .center, color: .black)

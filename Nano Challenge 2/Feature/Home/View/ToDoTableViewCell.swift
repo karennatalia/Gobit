@@ -13,7 +13,7 @@ class ToDoTableViewCell: UITableViewCell {
     
     lazy var title: UILabel = CustomLabel(text: "Habit Title", style: FontStyle.title, alignment: .left, color: .black)
     lazy var doneButton = CustomFilledButton(title: "Done")
-    private lazy var cardBackground: UIView = createCard()
+    private lazy var cardBackground: UIView = CustomCard()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

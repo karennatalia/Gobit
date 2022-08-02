@@ -13,8 +13,8 @@ class GoalDetailView: UIView {
     private lazy var goalTitle: UILabel = CustomLabel(text: "Goal Title", style: FontStyle.header, alignment: .center, color: .black)
     private lazy var goalDesc: UITextView = CustomTextView()
     private lazy var goalWhy: UITextView = CustomTextView()
-    private lazy var levelBackground: UIView = createCard()
-    private lazy var levelDetailBackground: UIView = createCard()
+    private lazy var levelBackground: UIView = CustomCard()
+    private lazy var levelDetailBackground: UIView = CustomCard()
     private lazy var levelText: UILabel = CustomLabel(text: "Level", style: FontStyle.detail, alignment: .center, color: .black)
     private lazy var levelNumber: UILabel = CustomLabel(text: "X", style: FontStyle.hugeText, alignment: .center, color: .secGreen)
     private lazy var expText: UILabel = CustomLabel(text: "Experience", style: FontStyle.detail, alignment: .left, color: .black)
@@ -29,8 +29,8 @@ class GoalDetailView: UIView {
     private lazy var heartFour: UIImageView = createImage(imageName: "heart.fill")
     private lazy var heartFive: UIImageView = createImage(imageName: "heart.fill")
     private lazy var addHabitBtn: UIButton = CustomImageButton(imageName: "plus.circle", color: UIColor.primGreen)
-    private lazy var lineTop: UIView = createHorizontalLine()
-    private lazy var lineBottom: UIView = createHorizontalLine()
+    private lazy var lineTop: UIView = UIView()
+    private lazy var lineBottom: UIView = UIView()
     private lazy var emptyState = EmptyState()
     private lazy var infoButton: UIButton = CustomImageButton(imageName: "info.circle", color: UIColor.primGreen)
     
@@ -92,6 +92,9 @@ class GoalDetailView: UIView {
         goalWhy.textAlignment = .center
         goalWhy.backgroundColor = .clear
         goalWhy.font = UIFont.systemFont(ofSize: 12)
+        
+        lineTop.backgroundColor = .lightGray
+        lineBottom.backgroundColor = .lightGray
     }
     
     func setupUIContent() {
@@ -172,12 +175,12 @@ class GoalDetailView: UIView {
         goalDesc.anchor(top: goalTitle.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingTop: 4)
         goalDesc.centerX(inView: self)
         
-        lineTop.anchor(top: goalDesc.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingTop: 8, paddingLeft: 16, paddingRight: 16)
+        lineTop.anchor(top: goalDesc.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingTop: 8, paddingLeft: 16, paddingRight: 16, height: 1)
         
         goalWhy.centerX(inView: self)
         goalWhy.anchor(top: lineTop.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingTop: 4)
         
-        lineBottom.anchor(top: goalWhy.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingTop: 8, paddingLeft: 16, paddingRight: 16)
+        lineBottom.anchor(top: goalWhy.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingTop: 8, paddingLeft: 16, paddingRight: 16, height: 1)
         
         levelBackground.anchor(top: lineBottom.bottomAnchor, left: self.leftAnchor, paddingTop: 16, paddingLeft: 16)
         levelBackground.setDimensions(width: (UIScreen.main.bounds.width - (16*4)) / 3, height: 80)
