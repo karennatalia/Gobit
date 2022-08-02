@@ -21,7 +21,7 @@ class GoalDetailView: UIView {
     private lazy var expNumber: UILabel = CustomLabel(text: "X/X", style: FontStyle.detail, alignment: .right, color: .black)
     private lazy var healthText: UILabel = CustomLabel(text: "Health", style: FontStyle.detail, alignment: .left, color: .black)
     private lazy var tableViewTitle: UILabel = CustomLabel(text: "Habit System", style: FontStyle.header, alignment: .left, color: .black)
-    lazy var habitTableView: UITableView = createTableView(isScrollable: true)
+    lazy var habitTableView: UITableView = CustomTableView(isScrollable: true, style: .plain)
     private lazy var progressExp: UIProgressView = createProgressView()
     private lazy var heartOne: UIImageView = createImage(imageName: "heart.fill")
     private lazy var heartTwo: UIImageView = createImage(imageName: "heart.fill")

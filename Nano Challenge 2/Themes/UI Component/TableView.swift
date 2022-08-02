@@ -8,16 +8,18 @@
 import Foundation
 import UIKit
 
-func createTableView(isScrollable: Bool) -> UITableView {
-    let tableView = UITableView()
-    tableView.separatorStyle = .none
-    tableView.alwaysBounceVertical = isScrollable
-    tableView.backgroundColor = .clear
-    return tableView
-}
-
-func createInsetGroupedTableView(isScrollable: Bool) -> UITableView {
-    let tableView = UITableView(frame: .zero, style: .insetGrouped)
-    tableView.alwaysBounceVertical = isScrollable
-    return tableView
+class CustomTableView: UITableView {
+    required init(isScrollable: Bool, style: UITableView.Style) {
+        super.init(frame: .zero, style: style)
+        
+        if style == .plain {
+            self.separatorStyle = .none
+            self.backgroundColor = .clear
+            self.alwaysBounceVertical = isScrollable
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

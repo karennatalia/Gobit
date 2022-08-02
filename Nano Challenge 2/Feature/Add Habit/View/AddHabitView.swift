@@ -15,7 +15,7 @@ class AddHabitView: UIView {
     
     private lazy var navBar = NavBar()
     private lazy var navTitle: UILabel = CustomLabel(text: "New Habit", style: FontStyle.systemDefaultBold, alignment: .center, color: .black)
-    lazy var tableViewForm: UITableView = createInsetGroupedTableView(isScrollable: false)
+    lazy var tableViewForm: UITableView = CustomTableView(isScrollable: false, style: .insetGrouped)
     
     var delegate: HabitAddedDelegate?
     

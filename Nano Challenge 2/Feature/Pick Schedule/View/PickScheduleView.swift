@@ -9,7 +9,7 @@ import UIKit
 
 class PickScheduleView: UIView {
     
-    private lazy var dayTableView: UITableView = createInsetGroupedTableView(isScrollable: false)
+    private lazy var dayTableView: UITableView = CustomTableView(isScrollable: false, style: .insetGrouped)
 
     let vc: PickScheduleViewController?
     

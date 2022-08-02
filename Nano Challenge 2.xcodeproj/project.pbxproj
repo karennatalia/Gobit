@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F5321272892C48400A67AA7 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5321262892C48400A67AA7 /* UIButton+Ext.swift */; };
 		5F5321292892D12A00A67AA7 /* GuidelinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5321282892D12A00A67AA7 /* GuidelinesTableViewCell.swift */; };
 		5F53212B2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212A2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift */; };
 		5F53213028930A2600A67AA7 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212C28930A2600A67AA7 /* Goal+CoreDataClass.swift */; };
@@ -84,7 +83,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F5321262892C48400A67AA7 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		5F5321282892D12A00A67AA7 /* GuidelinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesTableViewCell.swift; sourceTree = "<group>"; };
 		5F53212A2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGuidelinesTableViewCell.swift; sourceTree = "<group>"; };
 		5F53212C28930A2600A67AA7 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -457,7 +455,6 @@
 				5FA653E72890EF450022ACA2 /* UIView+Ext.swift */,
 				5FE377482891273700E44C6D /* UIColor+Ext.swift */,
 				5FE3779C2891C54200E44C6D /* Alert+Ext.swift */,
-				5F5321262892C48400A67AA7 /* UIButton+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -641,7 +638,6 @@
 				5FA65378288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodeld in Sources */,
 				5FA65398288EDA140022ACA2 /* GoalsView.swift in Sources */,
 				5FA65372288E8A340022ACA2 /* ViewController.swift in Sources */,
-				5F5321272892C48400A67AA7 /* UIButton+Ext.swift in Sources */,
 				5F9DA5CA2893510700E0A100 /* GuidelinesViewController.swift in Sources */,
 				5FA653EF2890F9AF0022ACA2 /* DateCollectionViewCell.swift in Sources */,
 				5FE3775D2891479800E44C6D /* AddHabitViewController+Delegate.swift in Sources */,

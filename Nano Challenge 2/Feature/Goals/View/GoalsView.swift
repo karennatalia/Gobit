@@ -9,7 +9,7 @@ import UIKit
 
 class GoalsView: UIView {
     
-    lazy var goalsTableView: UITableView = createTableView(isScrollable: true)
+    lazy var goalsTableView: UITableView = CustomTableView(isScrollable: true, style: .plain)
     private lazy var emptyState = EmptyState()
     
     let vc: GoalsViewController?

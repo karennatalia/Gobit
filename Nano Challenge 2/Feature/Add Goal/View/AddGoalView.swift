@@ -11,7 +11,7 @@ class AddGoalView: UIView {
 
     private lazy var navBar = NavBar()
     private lazy var navTitle: UILabel = CustomLabel(text: "New Goal", style: FontStyle.systemDefault, alignment: .center, color: .black)
-    lazy var tableViewForm: UITableView = createInsetGroupedTableView(isScrollable: false)
+    lazy var tableViewForm: UITableView = CustomTableView(isScrollable: false, style: .insetGrouped)
     
     private var addGoalDelegate: AddGoalDelegate?
     var goalAddedDelegate: GoalAddedDelegate?

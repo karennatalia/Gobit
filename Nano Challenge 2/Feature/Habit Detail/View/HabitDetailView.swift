@@ -11,7 +11,7 @@ class HabitDetailView: UIView {
 
     private lazy var habitTitle: UILabel = CustomLabel(text: "Habit Title", style: FontStyle.header, alignment: .left, color: .black)
     private lazy var habitDesc: UITextView = CustomTextView()
-    private lazy var contentTableView: UITableView = createTableView(isScrollable: true)
+    private lazy var contentTableView: UITableView = CustomTableView(isScrollable: true, style: .plain)
     
     let vc: HabitDetailViewController?
     let habit: Habit?
