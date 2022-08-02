@@ -12,7 +12,7 @@ class ToDoTableViewCell: UITableViewCell {
     var didHabitTapped: () -> ()  = { }
     
     lazy var title: UILabel = CustomLabel(text: "Habit Title", style: FontStyle.title, alignment: .left, color: .black)
-    lazy var doneButton = UIButton()
+    lazy var doneButton = CustomFilledButton(title: "Done")
     private lazy var cardBackground: UIView = createCard()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -40,11 +40,10 @@ class ToDoTableViewCell: UITableViewCell {
         title.centerY(inView: cardBackground)
         title.anchor(left: cardBackground.leftAnchor, paddingLeft: 16)
         doneButton.centerY(inView: cardBackground)
-        doneButton.anchor(right: cardBackground.rightAnchor, paddingRight: 16, width: 60, height: 30)
+        doneButton.anchor(right: cardBackground.rightAnchor, paddingRight: 16, width: 72, height: 30)
     }
     
     @objc func didHabit() {
-        print("did habit")
         didHabitTapped()
     }
 }

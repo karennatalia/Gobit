@@ -19,12 +19,7 @@ extension HomeViewController: UITableViewDataSource {
         
         cell.title.text = habit.title
         
-        if habit.statusToday == true {
-            cell.doneButton.toCompletedButton()
-        }
-        else {
-            cell.doneButton.toNotDoneButton()
-        }
+        cell.doneButton.changeButtonStatus(status: habit.statusToday)
         cell.didHabitTapped = {
             habit.statusToday.toggle()
             self.habitRepo.updateStatus(item: habit, statusToday: habit.statusToday)

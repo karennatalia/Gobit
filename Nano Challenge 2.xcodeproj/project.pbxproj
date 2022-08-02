@@ -14,6 +14,8 @@
 		5F53213128930A2600A67AA7 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212D28930A2600A67AA7 /* Goal+CoreDataProperties.swift */; };
 		5F53213228930A2600A67AA7 /* Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212E28930A2600A67AA7 /* Habit+CoreDataClass.swift */; };
 		5F53213328930A2600A67AA7 /* Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53212F28930A2600A67AA7 /* Habit+CoreDataProperties.swift */; };
+		5F6848D028991CFB0069DD30 /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6848CF28991CFB0069DD30 /* FilledButton.swift */; };
+		5F6848D228991D0F0069DD30 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6848D128991D0F0069DD30 /* ImageButton.swift */; };
 		5F9DA5CA2893510700E0A100 /* GuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DA5C92893510700E0A100 /* GuidelinesViewController.swift */; };
 		5F9DA5CC2893511600E0A100 /* GuidelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DA5CB2893511600E0A100 /* GuidelinesView.swift */; };
 		5FA6536E288E8A340022ACA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6536D288E8A340022ACA2 /* AppDelegate.swift */; };
@@ -31,7 +33,6 @@
 		5FA6539C288F7EC80022ACA2 /* HomeViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6539B288F7EC80022ACA2 /* HomeViewController+Delegate.swift */; };
 		5FA6539E288F7EF80022ACA2 /* HomeViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6539D288F7EF80022ACA2 /* HomeViewController+DataSource.swift */; };
 		5FA653A4288FA5DD0022ACA2 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A3288FA5DD0022ACA2 /* ToDoTableViewCell.swift */; };
-		5FA653A6288FA85A0022ACA2 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A5288FA85A0022ACA2 /* Buttons.swift */; };
 		5FA653A8288FAFF00022ACA2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A7288FAFF00022ACA2 /* Card.swift */; };
 		5FA653AA288FE5C40022ACA2 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653A9288FE5C40022ACA2 /* GoalTableViewCell.swift */; };
 		5FA653AC288FEB0A0022ACA2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA653AB288FEB0A0022ACA2 /* Images.swift */; };
@@ -95,6 +96,8 @@
 		5F53212D28930A2600A67AA7 /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5F53212E28930A2600A67AA7 /* Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5F53212F28930A2600A67AA7 /* Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5F6848CF28991CFB0069DD30 /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
+		5F6848D128991D0F0069DD30 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		5F9DA5C92893510700E0A100 /* GuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesViewController.swift; sourceTree = "<group>"; };
 		5F9DA5CB2893511600E0A100 /* GuidelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesView.swift; sourceTree = "<group>"; };
 		5FA6536A288E8A340022ACA2 /* Nano Challenge 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +117,6 @@
 		5FA6539B288F7EC80022ACA2 /* HomeViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegate.swift"; sourceTree = "<group>"; };
 		5FA6539D288F7EF80022ACA2 /* HomeViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+DataSource.swift"; sourceTree = "<group>"; };
 		5FA653A3288FA5DD0022ACA2 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
-		5FA653A5288FA85A0022ACA2 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		5FA653A7288FAFF00022ACA2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		5FA653A9288FE5C40022ACA2 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		5FA653AB288FEB0A0022ACA2 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -181,6 +183,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F6848D3289921150069DD30 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5F6848CF28991CFB0069DD30 /* FilledButton.swift */,
+				5F6848D128991D0F0069DD30 /* ImageButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		5F9DA5C3289350C500E0A100 /* Gamification Guidelines */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,13 +450,13 @@
 				5FE37761289149D300E44C6D /* Cell */,
 				5FA6538E288E95700022ACA2 /* Labels.swift */,
 				5FA65399288F7BB30022ACA2 /* TableView.swift */,
-				5FA653A5288FA85A0022ACA2 /* Buttons.swift */,
 				5FA653A7288FAFF00022ACA2 /* Card.swift */,
 				5FA653AB288FEB0A0022ACA2 /* Images.swift */,
 				5FA653C5289091790022ACA2 /* ProgressView.swift */,
 				5FA653D82890C99E0022ACA2 /* StackView.swift */,
 				5FA653EC2890F5590022ACA2 /* CollectionView.swift */,
 				5FE3774E2891427200E44C6D /* Inputs.swift */,
+				5F6848D3289921150069DD30 /* Buttons */,
 			);
 			path = "UI Component";
 			sourceTree = "<group>";
@@ -636,9 +647,10 @@
 				5FE3779B2891BD5900E44C6D /* HabitCoreDataSource.swift in Sources */,
 				5FE3774B2891306400E44C6D /* AddGoalView.swift in Sources */,
 				5FA653D02890995E0022ACA2 /* HabitDetailView.swift in Sources */,
-				5FA653A6288FA85A0022ACA2 /* Buttons.swift in Sources */,
 				5FAC9BEF28922964007CEBD0 /* Convert.swift in Sources */,
+				5F6848D028991CFB0069DD30 /* FilledButton.swift in Sources */,
 				5FA653B528901A2C0022ACA2 /* GoalDetailViewController.swift in Sources */,
+				5F6848D228991D0F0069DD30 /* ImageButton.swift in Sources */,
 				5FE377972891B94000E44C6D /* GoalCoreDataSource.swift in Sources */,
 				5FE3779D2891C54200E44C6D /* Alert+Ext.swift in Sources */,
 				5FA65378288E8A340022ACA2 /* Nano_Challenge_2.xcdatamodeld in Sources */,

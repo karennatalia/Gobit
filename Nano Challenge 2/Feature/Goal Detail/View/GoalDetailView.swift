@@ -28,11 +28,11 @@ class GoalDetailView: UIView {
     private lazy var heartThree: UIImageView = createImage(imageName: "heart")
     private lazy var heartFour: UIImageView = createImage(imageName: "heart.fill")
     private lazy var heartFive: UIImageView = createImage(imageName: "heart.fill")
-    private lazy var addHabitBtn: UIButton = createImageButton(imageName: "plus.circle", color: UIColor.primGreen)
+    private lazy var addHabitBtn: UIButton = CustomImageButton(imageName: "plus.circle", color: UIColor.primGreen)
     private lazy var lineTop: UIView = createHorizontalLine()
     private lazy var lineBottom: UIView = createHorizontalLine()
     private lazy var emptyState = EmptyState()
-    private lazy var infoButton: UIButton = createImageButton(imageName: "info.circle", color: UIColor.primGreen)
+    private lazy var infoButton: UIButton = CustomImageButton(imageName: "info.circle", color: UIColor.primGreen)
     
     let vc: GoalDetailViewController?
     var goal: Goal?

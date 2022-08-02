@@ -11,7 +11,7 @@ class PickScheduleTableViewCell: UITableViewCell {
     
     lazy var formTitle: UILabel = CustomLabel(text: "Schedule", style: FontStyle.systemDefault, alignment: .left, color: .black)
     lazy var pickedDayLabel: UILabel = CustomLabel(text: "day", style: FontStyle.systemDefault, alignment: .right, color: .lightGray)
-    lazy var pickButton: UIButton = createImageButton(imageName: "chevron.right", color: .lightGray)
+    lazy var pickButton: UIButton = CustomImageButton(imageName: "chevron.right", color: .lightGray)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

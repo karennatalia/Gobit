@@ -10,7 +10,7 @@ import UIKit
 class GuidelinesTableViewCell: UITableViewCell {
 
     private lazy var guidelinesLabel: UILabel = CustomLabel(text: "View Guidelines", style: FontStyle.subHeader, alignment: .left, color: .secGreen)
-    private lazy var chevronButton: UIButton = createImageButton(imageName: "chevron.down", color: UIColor.primGreen)
+    private lazy var chevronButton: UIButton = CustomImageButton(imageName: "chevron.down", color: UIColor.primGreen)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

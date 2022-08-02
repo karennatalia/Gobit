@@ -17,9 +17,6 @@ class AddHabitView: UIView {
     private lazy var navTitle: UILabel = CustomLabel(text: "New Habit", style: FontStyle.systemDefaultBold, alignment: .center, color: .black)
     lazy var tableViewForm: UITableView = createInsetGroupedTableView(isScrollable: false)
     
-    private lazy var tempCancel: UIButton = createTextButton(text: "Test CANCEl")
-    private lazy var tempDone: UIButton = createTextButton(text: "Done")
-    
     var delegate: HabitAddedDelegate?
     
     let vc: AddHabitViewController?

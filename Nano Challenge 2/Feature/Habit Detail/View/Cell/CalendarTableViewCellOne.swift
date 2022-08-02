@@ -11,8 +11,8 @@ import SwiftUI
 class CalendarTableViewCellOne: UITableViewCell {
 
     private lazy var monthTitle: UILabel = CustomLabel(text: "July 2022", style: FontStyle.subHeaderBold, alignment: .left, color: .black)
-    private lazy var leftButton: UIButton = createImageButton(imageName: "chevron.left", color: UIColor.primGreen)
-    private lazy var rightButton: UIButton = createImageButton(imageName: "chevron.right", color: UIColor.primGreen)
+    private lazy var leftButton: UIButton = CustomImageButton(imageName: "chevron.left", color: UIColor.primGreen)
+    private lazy var rightButton: UIButton = CustomImageButton(imageName: "chevron.right", color: UIColor.primGreen)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
