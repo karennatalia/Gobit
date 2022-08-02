@@ -265,7 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				5FA65388288E8BBB0022ACA2 /* HomeView.swift */,
-				5FA653A3288FA5DD0022ACA2 /* ToDoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				5FA65397288EDA140022ACA2 /* GoalsView.swift */,
-				5FA653A9288FE5C40022ACA2 /* GoalTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,7 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				5FA653C32890203A0022ACA2 /* GoalDetailView.swift */,
-				5FA653C7289095290022ACA2 /* HabitTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,7 +354,6 @@
 			isa = PBXGroup;
 			children = (
 				5FA653CF2890995E0022ACA2 /* HabitDetailView.swift */,
-				5FA653EB2890F1580022ACA2 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,7 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				5FE3774A2891306300E44C6D /* AddGoalView.swift */,
-				5FE37756289144CB00E44C6D /* TextViewTableViewCell.swift */,
 				5FAC9BEC28920968007CEBD0 /* AddGoalDelegate.swift */,
 			);
 			path = View;
@@ -414,7 +409,6 @@
 			isa = PBXGroup;
 			children = (
 				5FE3775A2891476300E44C6D /* AddHabitView.swift */,
-				5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,16 +450,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5FA653EB2890F1580022ACA2 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				5FA653D52890BC030022ACA2 /* ScheduleTableViewCell.swift */,
-				5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */,
-				5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		5FAC9BF028925488007CEBD0 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +465,14 @@
 				5FE3774C2891424600E44C6D /* TextFieldTableViewCell.swift */,
 				5F5321282892D12A00A67AA7 /* GuidelinesTableViewCell.swift */,
 				5F53212A2892DAF100A67AA7 /* TextGuidelinesTableViewCell.swift */,
+				5FE3776428914CC800E44C6D /* PickScheduleTableViewCell.swift */,
+				5FE37756289144CB00E44C6D /* TextViewTableViewCell.swift */,
+				5FA653D52890BC030022ACA2 /* ScheduleTableViewCell.swift */,
+				5FA653DA2890D43D0022ACA2 /* ProgressTableViewCell.swift */,
+				5FA653EE2890F9AF0022ACA2 /* DateCollectionViewCell.swift */,
+				5FA653C7289095290022ACA2 /* HabitTableViewCell.swift */,
+				5FA653A9288FE5C40022ACA2 /* GoalTableViewCell.swift */,
+				5FA653A3288FA5DD0022ACA2 /* ToDoTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
